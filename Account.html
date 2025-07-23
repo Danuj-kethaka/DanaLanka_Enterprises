@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Account.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/Logo.png.webp" alt="Dana Auto Parts">Dana Auto Parts</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="admin_login.php">Admin</a></li>
+            <li><a href="Cart.php"><img src="images/cart.png.jpg" width="auto" height="30px" alt="Cart Icon"></a></li> <!-- Replaced Cart link with image -->
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+
+    <script>
+        // Toggle navbar on mobile
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
+
+<div class="background-video-container">
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="videos/67358-521707474_small.mp4" type="video/mp4">
+    </video>
+
+<div class="account-wrapper">
+    <div class="left-section">
+        <div class="welcome-text">
+            <h1>Welcome Back!</h1>
+            <p>Sign in to your account to continue.</p>
+        </div>
+        <img src="images/welcome2 image.jpg" alt="Welcome Image">
+    </div>
+
+    <div class="right-section">
+        <div class="form-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="showLogin()">Login</button>
+                <button class="tab-btn" onclick="showRegister()">Register</button>
+            </div>
+
+            <form id="login-form" class="form active" action="login.php" method="POST">
+                <h2>Login</h2>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+                <a href="#" class="forgot-link">Forgot your password?</a>
+            </form>
+            
+
+            <form id="register-form" class="form" action="register.php" method="POST">
+                <h2>Register</h2>
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+    const tabButtons = document.querySelectorAll('.tab-btn');
+
+    function showLogin() {
+        loginForm.classList.add('active');
+        registerForm.classList.remove('active');
+        tabButtons[0].classList.add('active');
+        tabButtons[1].classList.remove('active');
+    }
+
+    function showRegister() {
+        loginForm.classList.remove('active');
+        registerForm.classList.add('active');
+        tabButtons[0].classList.remove('active');
+        tabButtons[1].classList.add('active');
+    }
+</script>
+
+
+        
+    
+</body>
+</html>

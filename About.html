@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/Logo.png.webp" alt="Dana Auto Parts">Dana Auto Parts</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Account.html">Account</a></li>
+            <li><a href="Cart.php"><img src="images/cart.png.jpg" width="auto" height="30px" alt="Cart Icon"></a></li> <!-- Replaced Cart link with image -->
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+
+    <script>
+        // Toggle navbar on mobile
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
+
+
+
+
+<div class="about-section"><br><br><br><br>
+    <h1>About Dana Auto Parts</h1>
+    <p>Your Trusted Provider of Heavy Vehicle Spare Parts</p>
+</div>
+    
+
+<section class="content-section">
+    <div class="row">
+        <div class="col-2">
+            <h2>Our Story</h2>
+            <p>Dana Auto Parts was founded with a mission to provide high-quality spare parts for heavy vehicles. Over the years, we have built strong partnerships with leading brands and earned the trust of our clients.</p>
+        </div>
+        <div class="col-2">
+            <img src="Images/Logo.png.webp" alt="Our History" width="100%">
+        </div>
+    </div>
+
+    <div class="services-section">
+        <h2>Our Services</h2>
+        <p>We specialize in offering spare parts for various heavy vehicles, including buses, trucks, and lorries. Our products are sourced from trusted brands to ensure quality and durability.</p>
+    </div><br><br>
+
+    <div class="why-choose-us"><br><br>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Trusted partnerships with leading manufacturers</li>
+            <li>High-quality spare parts for heavy vehicles</li>
+            <li>Exceptional customer service and support</li>
+            <li>Competitive pricing</li>
+        </ul>
+    </div>
+
+    <div class="contact-info"><br><br><br>
+        <h2>Contact Us</h2>
+        <p>For more information, follow us on social media:</p>
+        <p>Facebook | Twitter | LinkedIn</p>
+    </div>
+</section><br><br>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spare Parts Website</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+   
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/Logo.png.webp" alt="Dana Auto Parts">Dana Auto Parts</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Account.html">Account</a></li>
+            <li><a href="Cart.php"><img src="images/cart.png.jpg" width="auto" height="30px" alt="Cart Icon"></a></li> <!-- Replaced Cart link with image -->
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+
+    <script>
+        // Toggle navbar on mobile
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
+
+
+    <!-- Parallax Section 1 -->
+    <div class="parallax parallax-1">
+        <h1>Upgrade Your Vehicle  with <br>Top-Notch Spare Parts</h1>
+        <p>Welcome to Dana Auto Parts! <br>We’re thrilled 
+            to have you here. As part of Dana Lanka Enterprises,
+            we offer a wide selection of high-quality spare parts for
+             heavy vehicles. Our goal is to provide you with the best 
+             products and exceptional service to keep your vehicles running
+             smoothly.Thank you for choosing us.</p>
+
+             <button class="explore-btn" onclick="window.location.href='products.html';">Explore Now</button>
+
+         </div>
+
+            
+       
+    </div>
+
+
+    
+
+        
+
+    
+
+    <!-- Content Section -->
+    <section class="content">
+        
+        <div class="categories">
+        
+            <div class="row">
+                <div class="col-3">
+                    <img src="Images/coverphoto1.png.png" width="auto" height="400px">
+                </div>
+    
+                <div class="col-3">
+                <img src="Images/coverphoto2.png.png" width="auto" height="400px" >
+            </div>
+    
+                <div class="col-3">
+                <img src="Images/coverphoto3.png.png" width="auto" height="400px">
+            </div>
+
+
+
+        
+            
+
+
+        </div>
+    </div>
+    </section>
+
+    <!-- Parallax Section 2 -->
+    <div class="parallax parallax-2">
+
+       
+        <section class="content">
+            <div class="select-spare-parts">
+                <h2>Select Your Spare Part</h2>
+        
+                <div class="select-row">
+                    <!-- Engine Spare Part -->
+                    <div class="select-item">
+                        <label for="engine-parts">Choose Engine Parts:</label>
+                        <select id="engine-parts" name="engine-parts" onchange="location = this.value;">
+                            <option value="">Select a Part</option>
+                            <option value="products/TimingBelt.html">Timing Belt</option>
+                           
+                            <option value="products/CVAxleShaft.html">Axle Shaft</option>
+                            <option value="products/StreeringGear.html">GearBox</option>
+                            <option value="products/Alternator.html">Alternator</option>
+                        </select>
+                    </div>
+        
+                    <!-- Brake Spare Part -->
+                    <div class="select-item">
+                        <label for="brake-parts">Choose Brake Parts:</label>
+                        <select id="brake-parts" name="brake-parts" onchange="location = this.value;">
+                            <option value="">Select a Part</option>
+                            <option value="products/Brakepads.html">Brake Pads</option>
+                            <option value="products/BrakeLiner.html">Brake Liner</option>
+                            <option value="products/brakeRotors.html">Brake Disk</option>
+                        </select>
+                    </div>
+        
+                    <!-- Shocks Spare Part -->
+                    <div class="select-item">
+                        <label for="shocks-parts">Choose Shocks Parts:</label>
+                        <select id="shocks-parts" name="shocks-parts" onchange="location = this.value;">
+                            <option value="">Select a Part</option>
+                            <option value="products/Shocks.html">Shocks</option>
+                           
+                        </select>
+                    </div>
+        
+                    <!-- Interior Parts -->
+                    <div class="select-item">
+                        <label for="interior-parts">Choose Engine parts:</label>
+                        <select id="interior-parts" name="interior-parts" onchange="location = this.value;">
+                            <option value="">Select a Part</option>
+                            <option value="products/MountingBush.html">Mounting Bush</option>
+                            <option value="products/StarterMoter.html">Starter Moter</option>
+                            <option value="products/Radiator.html">Radiator</option>
+                        </select>
+                    </div>
+        
+                    <!-- Dashboard Parts -->
+                    <div class="select-item">
+                        <label for="dashboard-parts">Choose Dashboard Parts:</label>
+                        <select id="dashboard-parts" name="dashboard-parts" onchange="location = this.value;">
+                            <option value="">Select a Part</option>
+                            <option value="products/DashBoard.html">Dashboard Miter</option>
+                            
+                        </select>
+                    </div>
+        
+                    <!-- Battery Spare Part -->
+                    <div class="select-item">
+                        <label for="battery-parts">Choose Electric Parts:</label>
+                        <select id="battery-parts" name="battery-parts" onchange="location = this.value;">
+                            <option value="">Select a Part</option>
+                            <option value="products/WiringHarness.html">Wiring Harness</option>
+                     
+                        </select>
+                    </div>
+                </div>
+        
+                <!-- Optional "Find My Part" Button -->
+                <div class="button-container">
+                    <button class="find-part-btn">Find My Part</button>
+                </div>
+            </div>
+        </section>
+        
+
+
+        
+        
+        
+        
+        
+            
+            
+          
+        
+    </div>
+
+    <div class="parallax parallax-4">
+        <h1>Our Services</h1>
+    </div>
+
+    <!-- Content Section -->
+    <section class="content">
+        
+        <div class="vehicle-types">
+            <h2>Our Heavy Vehicle Spare Parts Selection</h2><br><br>
+            <p>
+                Dana Auto Parts proudly offers specialized spare parts for a range of heavy vehicles, ensuring 
+                you find exactly what you need. We provide components for popular models like the Indian Star Bus, 
+                Leyland Bus, 13/13 Truck, Isuzu Truck, and Mitsubishi Lorry. Click on any vehicle below to explore 
+                available spare parts specifically tailored for that model.
+            </p>
+            <br>
+    
+            
+            
+          
+        </div>
+    <div class="vehicle-row">
+        <div class="vehicle-col">
+            <a href="products.php" class="vehicle-link">
+                <div class="vehicle-box">
+                    <img src="Images/tatabus2.png.png" alt="Indian Star Bus" width="auto" height="200px">
+                    <p>Indian Star Bus</p>
+                </div>
+            </a>
+        </div>
+    
+        <div class="vehicle-col">
+            <a href="products.php" class="vehicle-link">
+                <div class="vehicle-box">
+                    <img src="Images/damrajina.png.png" alt="Leyland Bus" width="auto" height="200px">
+                    <p>Leyland Bus</p>
+                </div>
+            </a>
+        </div>
+    
+        <div class="vehicle-col">
+            <a href="products.php" class="vehicle-link">
+                <div class="vehicle-box">
+                    <img src="Images/newlorry.png.png" alt="13/13 Truck" width="auto" height="200px">
+                    <p>13/13 Truck</p>
+                </div>
+            </a>
+        </div>
+    
+        <div class="vehicle-col">
+            <a href="products.php" class="vehicle-link">
+                <div class="vehicle-box">
+                    <img src="Images/isuzutruck2.png.png" alt="Isuzu Truck" width="auto" height="200px">
+                    <p>Isuzu Truck</p>
+                </div>
+            </a>
+        </div>
+    
+        <div class="vehicle-col">
+            <a href="products.php" class="vehicle-link">
+                <div class="vehicle-box">
+                    <img src="Images/canter.png.png" alt="Mitsubishi Lorry" width="auto" height="200px">
+                    <p>Mitsubishi Lorry</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    </section>
+
+   
+
+    <!-- Parallax Section 3 -->
+    <div class="parallax parallax-3">
+        <h1>Why Choose Dana Auto Parts?</h1>
+       
+        <p>At Dana Auto Parts, we believe in quality and reliability. Our spare parts are sourced from 
+            trusted manufacturers to ensure that your heavy vehicles perform at their best. We provide 
+            a variety of products to meet all your needs, including brake systems, engine parts, and more. 
+            With our expert team and commitment to customer satisfaction, you can trust us to deliver 
+            exceptional service every time.</p>
+
+    </div>
+
+    <section class="content">
+        <div class="brands">
+            <h2>Our Trusted Partners</h2><br><br>
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="Images/ashoklogo.png.png" alt="Ashok Logo" width="auto" height="200px">
+                    </div>
+                    <div class="col-5">
+                        <img src="Images/isuzulogo.png.png" alt="Isuzu Logo" width="auto" height="200px">
+                    </div>
+                    <div class="col-5">
+                        <img src="Images/newMitsubishi-logo.png" alt="Mitsubishi Logo" width="auto" height="200px">
+                    </div>
+                    <div class="col-5">
+                        <img src="Images/tatalogo.png.webp" alt="Tata Logo" width="auto" height="200px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Info Section -->
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>For inquiries or support, feel free to reach out to us:</p>
+                <p><strong>Email:</strong> support@danaauto.com</p>
+                <p><strong>Phone:</strong> +94 123 456 789</p>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="customer_faq.php">FAQ</a></li>
+                    <li><a href="privacy.html">privacy policy</a></li>
+                    <li><a href="About.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- About Us Section -->
+            <div class="footer-section about-us">
+                <h3>About Us</h3>
+                <p>At Dana Auto Parts, we strive to provide the highest quality spare parts for heavy vehicles. Our team is committed to offering exceptional service and products to keep your vehicles in top condition.</p>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

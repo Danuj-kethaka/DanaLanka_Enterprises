@@ -1,0 +1,229 @@
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically centers the logo image and text */
+}
+
+.navbar .logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between the logo image and text */
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Underline effect on hover */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f0a500;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hamburger Menu Active Animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+}
+
+body {
+    position: relative;
+    background: url('images/account\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     /* Ensure the body takes full viewport height */
+    margin: 0;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Inherit the background image from the body */
+    filter: blur(8px); /* Adjust the blur level (8px is an example, you can change it) */
+    z-index: -1; /* Ensure the blurred image stays behind the content */
+}
+.about-section {
+    background: url('images/supiri.jpg');
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-section h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.about-section p {
+    font-size: 1.5em;
+    color:white;
+}
+
+.content-section {
+    padding: 20px 50px;
+    color: white;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    color: white;
+    
+}
+
+.col-2 {
+    flex-basis: 45%;
+    padding: 20px;
+    color: white;
+}
+
+.services-section, .why-choose-us, .contact-info {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #131313;
+    margin-bottom: 20px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: white;
+}
+
+.contact-info a {
+    color: #ff523b;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,213 @@
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically centers the logo image and text */
+}
+
+.navbar .logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between the logo image and text */
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Underline effect on hover */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f0a500;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hamburger Menu Active Animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+}
+
+
+
+/* Privacy Policy Page Content */
+/* General Reset */
+
+
+/* Header Section */
+.policy-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.policy-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.policy-intro {
+    font-size: 1rem;
+}
+
+/* Content Section */
+/* General Reset */
+
+/* Header Section */
+.policy-header {
+    background-color: #007bff;
+    color: white;
+   
+    text-align: center;
+    padding-top: 100px;
+}
+
+.policy-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.policy-intro {
+    font-size: 1rem;
+}
+
+/* Content Section */
+.policy-content {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.policy-section-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 20px 0 10px;
+}
+
+.policy-list {
+    margin: 10px 0 20px 20px;
+    list-style-type: disc;
+}
+
+.policy-list li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.policy-content p {
+    color: #555;
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,277 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically centers the logo image and text */
+}
+
+.navbar .logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between the logo image and text */
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Underline effect on hover */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f0a500;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hamburger Menu Active Animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+}
+
+#cart-page {
+    padding: 100px;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black; /* Set table background to black */
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Default styles for small screens */
+.small-container {
+    width: 100%;
+    padding: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: white; /* Set text color to white */
+}
+
+.cart-info {
+    display: flex;
+    align-items: center;
+}
+
+.cart-info img {
+    width: 60px; /* Adjust image size */
+    margin-right: 10px;
+}
+
+/* Responsive adjustments for larger screens */
+@media screen and (min-width: 768px) {
+    .small-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    .cart-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cart-info img {
+        width: 80px;
+        margin-right: 15px;
+    }
+
+    .total-price table {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .total-price td {
+        padding: 10px;
+    }
+}
+
+/* Larger screens (e.g., desktop) */
+@media screen and (min-width: 1024px) {
+    .small-container {
+        max-width: 1400px;
+        padding: 40px;
+    }
+
+    .total-price table {
+        width: 40%;
+    }
+}
+
+th {
+    background-color:red; /* Dark background for table headers */
+    color: white; /* Ensure header text is white */
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+td {
+    color: white; /* Ensures text inside table cells is white */
+    background-color:dimgray; /* Slightly darker background for table data cells */
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    color:black; /* Input text color */
+    background-color: white; /* Input background color */
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 580px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+body{
+    background-image: url('images/red.jpg');
+}
+
+
+
+

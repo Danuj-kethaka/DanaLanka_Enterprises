@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ProductNavbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/Logo.png.webp" alt="Dana Auto Parts">Dana Auto Parts</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../Home.html">Home</a></li>
+            <li><a href="../products.html">Products</a></li>
+            <li><a href="../About.html">About</a></li>
+            <li><a href="../Account.html">Account</a></li>
+            <li><a href="../Cart.php"><img src="images/cart.png.jpg" width="auto" height="30px" alt="Cart Icon"></a></li> <!-- Replaced Cart link with image -->
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <script>
+        // Toggle navbar on mobile
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
+    <div class="small-container" single-product>
+        <div class="row">
+            <div class="col-2">
+                <img src="Images/49.png" width="100%">
+            </div>
+            <div class="col-2">
+                <p>Turbo Charger</p>
+                <h1>Turbo Charger</h1>
+                <h4>Rs 20000.00</h4>
+                <br>
+                <select>
+                    <option>Indian Star Bus</option>
+                    <option>Mitsubishi Lorry</option>
+                    <option>TATA Lorry</option>
+                    <option>Laylend Bus</option>
+                    <option>Isuzu lorry</option>
+                </select>
+                <input type="number" value="1">
+                <a href="#" class="btn" id="add-to-cart-btn">Add To Cart</a><br>
+
+                <h3>Product details</h3>
+                <p>The Heavy-Duty Turbocharger is designed for trucks and commercial vehicles to enhance engine performance by increasing airflow and boosting power. Built for durability and efficiency, it improves fuel economy, reduces emissions, and ensures reliable operation under high-stress conditions, providing greater horsepower and torque.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('add-to-cart-btn').addEventListener('click', function() {
+    const productName = document.querySelector('h1').textContent;
+    const productPrice = document.querySelector('h4').textContent.replace('Rs ', '');
+    const productQuantity = document.querySelector('input[type="number"]').value;
+    const productImage = document.querySelector('.col-2 img').src;
+    
+    // Retrieve user_id from session storage (or another method depending on authentication)
+    const userId = sessionStorage.getItem('user_id'); // Example, replace with actual user session handling
+
+    // Send product data to PHP script using AJAX
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'add_to_cart.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            alert(`${productName} has been added to your cart!`);
+        }
+    };
+    xhr.send(`user_id=${userId}&productName=${productName}&productPrice=${productPrice}&productQuantity=${productQuantity}&productImage=${productImage}`);
+});
+
+    </script>
+</body>
+</html>
