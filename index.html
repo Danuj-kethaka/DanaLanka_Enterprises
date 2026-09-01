@@ -3,339 +3,1783 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spare Parts Website</title>
+
+    <meta
+        name="description"
+        content="Dana Auto Parts - Quality spare parts for heavy vehicles in Sri Lanka."
+    >
+
+    <title>Dana Auto Parts | Heavy Vehicle Spare Parts</title>
+
     <link rel="stylesheet" href="styless.css">
 </head>
+
 <body>
 
-   
+    <!-- =========================================================
+         TOP ANNOUNCEMENT BAR
+    ========================================================== -->
 
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#"><img src="images/Logo.png.webp" alt="Dana Auto Parts">Dana Auto Parts</a>
+    <div class="announcement-bar">
+        <div class="announcement-inner">
+            <span>
+                <strong>Free islandwide delivery</strong>
+                on selected orders
+            </span>
+
+            <span class="announcement-divider"></span>
+
+            <span>
+                Genuine & quality-tested spare parts
+            </span>
         </div>
-        <ul class="nav-links">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Account.html">Account</a></li>
-            <li><a href="Cart.php"><img src="images/cart.png.jpg" width="auto" height="30px" alt="Cart Icon"></a></li> <!-- Replaced Cart link with image -->
-        </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+    </div>
+
+
+    <!-- =========================================================
+         MAIN NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <a href="index.html" class="brand">
+
+                <span class="brand-logo">
+                    <img
+                        src="images/Logo.png.webp"
+                        alt="Dana Auto Parts logo"
+                    >
+                </span>
+
+                <span class="brand-text">
+                    <strong>DANA</strong>
+                    <small>AUTO PARTS</small>
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="products.html" class="nav-link">
+                    Shop
+                </a>
+
+                <a href="#vehicle-categories" class="nav-link">
+                    Vehicles
+                </a>
+
+                <a href="#why-dana" class="nav-link">
+                    Why Dana
+                </a>
+
+                <a href="About.html" class="nav-link">
+                    About
+                </a>
+
+            </div>
+
+
+            <!-- Navigation Actions -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="products.html"
+                    class="nav-icon-button search-button"
+                    aria-label="Search products"
+                    title="Search products"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="11"
+                            cy="11"
+                            r="6.5"
+                        ></circle>
+
+                        <path d="M16 16L21 21"></path>
+                    </svg>
+                </a>
+
+
+                <a
+                    href="Account.html"
+                    class="nav-icon-button"
+                    aria-label="Account"
+                    title="My Account"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="3.5"
+                        ></circle>
+
+                        <path
+                            d="M5 21c.7-4 3.1-6 7-6s6.3 2 7 6"
+                        ></path>
+                    </svg>
+                </a>
+
+
+                <a
+                    href="Cart.php"
+                    class="cart-button"
+                    aria-label="Shopping cart"
+                    title="Shopping Cart"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M3 4h2l2 12h10l3-9H6"
+                        ></path>
+
+                        <circle
+                            cx="9"
+                            cy="20"
+                            r="1.4"
+                        ></circle>
+
+                        <circle
+                            cx="17"
+                            cy="20"
+                            r="1.4"
+                        ></circle>
+                    </svg>
+
+                    <span class="cart-count">0</span>
+
+                </a>
+
+
+                <!-- Mobile menu -->
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    type="button"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO SECTION
+        ====================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-overlay"></div>
+
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Heavy Vehicle Spare Parts
+                </div>
+
+
+                <h1>
+                    Keep Your Fleet
+                    <span>Moving.</span>
+                </h1>
+
+
+                <p class="hero-description">
+                    Quality spare parts for buses, trucks and
+                    commercial vehicles — backed by reliable
+                    service from Dana Auto Parts.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        href="products.html"
+                        class="primary-button"
+                    >
+                        Shop Spare Parts
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M5 12h13"></path>
+                            <path d="M13 6l6 6-6 6"></path>
+                        </svg>
+                    </a>
+
+
+                    <a
+                        href="#vehicle-categories"
+                        class="secondary-button"
+                    >
+                        Browse by Vehicle
+                    </a>
+
+                </div>
+
+
+                <!-- Hero trust indicators -->
+
+                <div class="hero-trust">
+
+                    <div class="trust-item">
+
+                        <strong>500+</strong>
+
+                        <span>
+                            Parts & Components
+                        </span>
+
+                    </div>
+
+
+                    <div class="trust-divider"></div>
+
+
+                    <div class="trust-item">
+
+                        <strong>5+</strong>
+
+                        <span>
+                            Vehicle Categories
+                        </span>
+
+                    </div>
+
+
+                    <div class="trust-divider"></div>
+
+
+                    <div class="trust-item">
+
+                        <strong>Quality</strong>
+
+                        <span>
+                            You Can Rely On
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="#featured-categories"
+                class="scroll-indicator"
+                aria-label="Scroll down"
+            >
+
+                <span>Scroll to explore</span>
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             QUICK BENEFITS
+        ====================================================== -->
+
+        <section class="benefits-section">
+
+            <div class="container">
+
+                <div class="benefits-grid">
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"
+                                ></path>
+
+                                <path
+                                    d="M8.5 12l2.2 2.2 4.8-5"
+                                ></path>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Quality Assured</h3>
+
+                            <p>
+                                Carefully selected components
+                                for dependable performance.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M3 6h11v10H3z"
+                                ></path>
+
+                                <path
+                                    d="M14 9h4l3 3v4h-7z"
+                                ></path>
+
+                                <circle
+                                    cx="7"
+                                    cy="18"
+                                    r="2"
+                                ></circle>
+
+                                <circle
+                                    cx="18"
+                                    cy="18"
+                                    r="2"
+                                ></circle>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Reliable Delivery</h3>
+
+                            <p>
+                                Get your essential spare parts
+                                where you need them.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M4 5h16v14H4z"
+                                ></path>
+
+                                <path
+                                    d="M8 9h8M8 13h5"
+                                ></path>
+
+                                <path
+                                    d="M16 16l2 2 3-4"
+                                ></path>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Easy Ordering</h3>
+
+                            <p>
+                                Find the right part and order
+                                with a simple shopping experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M12 2a7 7 0 0 0-7 7v4a4 4 0 0 0 4 4h1v-6H7"
+                                ></path>
+
+                                <path
+                                    d="M12 2a7 7 0 0 1 7 7v4a4 4 0 0 1-4 4h-1"
+                                ></path>
+
+                                <path
+                                    d="M12 18v3"
+                                ></path>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Customer Support</h3>
+
+                            <p>
+                                Need help finding a part?
+                                We're here to assist.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FEATURED CATEGORIES
+        ====================================================== -->
+
+        <section
+            class="featured-section"
+            id="featured-categories"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            SHOP BY CATEGORY
+                        </span>
+
+                        <h2>
+                            Parts for every
+                            <span>journey.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        href="products.html"
+                        class="text-link"
+                    >
+                        View all products
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M5 12h13"></path>
+                            <path d="M13 6l6 6-6 6"></path>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+
+                <div class="category-grid">
+
+
+                    <a
+                        href="products.html"
+                        class="category-card category-card-large"
+                    >
+
+                        <img
+                            src="images/coverphoto1.png.png"
+                            alt="Engine and mechanical spare parts"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+
+                            <span>
+                                ENGINE & MECHANICAL
+                            </span>
+
+                            <h3>
+                                Keep the power
+                                running.
+                            </h3>
+
+                            <div class="category-arrow">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="products.html"
+                        class="category-card"
+                    >
+
+                        <img
+                            src="images/coverphoto2.png.png"
+                            alt="Brake spare parts"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+
+                            <span>
+                                BRAKING SYSTEM
+                            </span>
+
+                            <h3>
+                                Stop with
+                                confidence.
+                            </h3>
+
+                            <div class="category-arrow">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="products.html"
+                        class="category-card"
+                    >
+
+                        <img
+                            src="images/coverphoto3.png.png"
+                            alt="Vehicle electrical spare parts"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+
+                            <span>
+                                ELECTRICAL & MORE
+                            </span>
+
+                            <h3>
+                                Built for
+                                the road.
+                            </h3>
+
+                            <div class="category-arrow">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PART FINDER
+        ====================================================== -->
+
+        <section class="part-finder-section">
+
+            <div class="part-finder-background"></div>
+
+            <div class="container">
+
+                <div class="part-finder">
+
+                    <div class="part-finder-content">
+
+                        <span class="section-eyebrow light">
+                            FIND THE RIGHT PART
+                        </span>
+
+                        <h2>
+                            Know what you need?
+                            <span>Find it faster.</span>
+                        </h2>
+
+                        <p>
+                            Select a category below and jump
+                            directly to the spare part you're
+                            looking for.
+                        </p>
+
+                    </div>
+
+
+                    <div class="finder-grid">
+
+
+                        <div class="finder-field">
+
+                            <label for="engine-parts">
+                                Engine & Mechanical
+                            </label>
+
+                            <div class="select-wrapper">
+
+                                <select
+                                    id="engine-parts"
+                                    onchange="goToPart(this)"
+                                >
+
+                                    <option value="">
+                                        Choose a part
+                                    </option>
+
+                                    <option value="products/TimingBelt.html">
+                                        Timing Belt
+                                    </option>
+
+                                    <option value="products/CVAxleShaft.html">
+                                        Axle Shaft
+                                    </option>
+
+                                    <option value="products/StreeringGear.html">
+                                        GearBox
+                                    </option>
+
+                                    <option value="products/Alternator.html">
+                                        Alternator
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="finder-field">
+
+                            <label for="brake-parts">
+                                Brake System
+                            </label>
+
+                            <div class="select-wrapper">
+
+                                <select
+                                    id="brake-parts"
+                                    onchange="goToPart(this)"
+                                >
+
+                                    <option value="">
+                                        Choose a part
+                                    </option>
+
+                                    <option value="products/Brakepads.html">
+                                        Brake Pads
+                                    </option>
+
+                                    <option value="products/BrakeLiner.html">
+                                        Brake Liner
+                                    </option>
+
+                                    <option value="products/brakeRotors.html">
+                                        Brake Disk
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="finder-field">
+
+                            <label for="suspension-parts">
+                                Suspension
+                            </label>
+
+                            <div class="select-wrapper">
+
+                                <select
+                                    id="suspension-parts"
+                                    onchange="goToPart(this)"
+                                >
+
+                                    <option value="">
+                                        Choose a part
+                                    </option>
+
+                                    <option value="products/Shocks.html">
+                                        Shocks
+                                    </option>
+
+                                    <option value="products/MountingBush.html">
+                                        Mounting Bush
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="finder-field">
+
+                            <label for="electrical-parts">
+                                Electrical
+                            </label>
+
+                            <div class="select-wrapper">
+
+                                <select
+                                    id="electrical-parts"
+                                    onchange="goToPart(this)"
+                                >
+
+                                    <option value="">
+                                        Choose a part
+                                    </option>
+
+                                    <option value="products/Alternator.html">
+                                        Alternator
+                                    </option>
+
+                                    <option value="products/StarterMoter.html">
+                                        Starter Motor
+                                    </option>
+
+                                    <option value="products/WiringHarness.html">
+                                        Wiring Harness
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <a
+                        href="products.html"
+                        class="finder-button"
+                    >
+                        Browse all spare parts
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M5 12h13"></path>
+                            <path d="M13 6l6 6-6 6"></path>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             VEHICLE CATEGORIES
+        ====================================================== -->
+
+        <section
+            class="vehicles-section"
+            id="vehicle-categories"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading centered">
+
+                    <span class="section-eyebrow">
+                        SHOP BY VEHICLE
+                    </span>
+
+                    <h2>
+                        Parts made for
+                        <span>your vehicle.</span>
+                    </h2>
+
+                    <p>
+                        Browse spare parts according to your
+                        heavy vehicle or commercial vehicle type.
+                    </p>
+
+                </div>
+
+
+                <div class="vehicle-grid">
+
+
+                    <a
+                        href="products.php"
+                        class="vehicle-card"
+                    >
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="images/tatabus2.png.png"
+                                alt="Indian Star Bus"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="vehicle-card-content">
+
+                            <span>
+                                BUS
+                            </span>
+
+                            <h3>
+                                Indian Star Bus
+                            </h3>
+
+                            <div class="vehicle-link">
+
+                                Explore parts
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="products.php"
+                        class="vehicle-card"
+                    >
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="images/damrajina.png.png"
+                                alt="Leyland Bus"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="vehicle-card-content">
+
+                            <span>
+                                BUS
+                            </span>
+
+                            <h3>
+                                Leyland Bus
+                            </h3>
+
+                            <div class="vehicle-link">
+
+                                Explore parts
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="products.php"
+                        class="vehicle-card"
+                    >
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="images/newlorry.png.png"
+                                alt="13/13 Truck"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="vehicle-card-content">
+
+                            <span>
+                                TRUCK
+                            </span>
+
+                            <h3>
+                                13/13 Truck
+                            </h3>
+
+                            <div class="vehicle-link">
+
+                                Explore parts
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="products.php"
+                        class="vehicle-card"
+                    >
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="images/isuzutruck2.png.png"
+                                alt="Isuzu Truck"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="vehicle-card-content">
+
+                            <span>
+                                TRUCK
+                            </span>
+
+                            <h3>
+                                Isuzu Truck
+                            </h3>
+
+                            <div class="vehicle-link">
+
+                                Explore parts
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="products.php"
+                        class="vehicle-card"
+                    >
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="images/canter.png.png"
+                                alt="Mitsubishi Lorry"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="vehicle-card-content">
+
+                            <span>
+                                LORRY
+                            </span>
+
+                            <h3>
+                                Mitsubishi Lorry
+                            </h3>
+
+                            <div class="vehicle-link">
+
+                                Explore parts
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M5 12h13"></path>
+                                    <path d="M13 6l6 6-6 6"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             WHY DANA
+        ====================================================== -->
+
+        <section
+            class="why-section"
+            id="why-dana"
+        >
+
+            <div class="container">
+
+                <div class="why-grid">
+
+
+                    <div class="why-image">
+
+                        <img
+                            src="images/image3.jpg"
+                            alt="Dana Auto Parts heavy vehicle parts"
+                            loading="lazy"
+                        >
+
+                        <div class="why-image-badge">
+
+                            <strong>Trusted</strong>
+
+                            <span>
+                                Spare Parts Partner
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-content">
+
+                        <span class="section-eyebrow">
+                            WHY DANA AUTO PARTS
+                        </span>
+
+                        <h2>
+                            More than parts.
+                            <span>We keep businesses moving.</span>
+                        </h2>
+
+                        <p class="why-intro">
+                            Finding the right component for a
+                            commercial vehicle should be simple.
+                            Dana Auto Parts focuses on quality,
+                            reliability and a straightforward
+                            buying experience.
+                        </p>
+
+
+                        <div class="why-features">
+
+
+                            <div class="why-feature">
+
+                                <div class="why-feature-number">
+                                    01
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Quality-focused selection
+                                    </h3>
+
+                                    <p>
+                                        We focus on dependable
+                                        components suitable for
+                                        demanding heavy-vehicle use.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="why-feature">
+
+                                <div class="why-feature-number">
+                                    02
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Vehicle-focused shopping
+                                    </h3>
+
+                                    <p>
+                                        Find parts by vehicle type
+                                        or go directly to the component
+                                        you need.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="why-feature">
+
+                                <div class="why-feature-number">
+                                    03
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Customer-first service
+                                    </h3>
+
+                                    <p>
+                                        Need help identifying a part?
+                                        Our team is ready to help you
+                                        make the right choice.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <a
+                            href="About.html"
+                            class="outline-button"
+                        >
+                            Learn more about Dana
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M5 12h13"></path>
+                                <path d="M13 6l6 6-6 6"></path>
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TRUSTED BRANDS
+        ====================================================== -->
+
+        <section class="brands-section">
+
+            <div class="container">
+
+                <div class="brands-heading">
+
+                    <span class="section-eyebrow">
+                        BRANDS WE SUPPORT
+                    </span>
+
+                    <h2>
+                        Built around the brands
+                        <span>you know.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="brands-grid">
+
+                    <div class="brand-card">
+
+                        <img
+                            src="images/ashoklogo.png.png"
+                            alt="Ashok Leyland"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="brand-card">
+
+                        <img
+                            src="images/isuzulogo.png.png"
+                            alt="Isuzu"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="brand-card">
+
+                        <img
+                            src="images/newMitsubishi-logo.png"
+                            alt="Mitsubishi"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="brand-card">
+
+                        <img
+                            src="images/tatalogo.png.webp"
+                            alt="Tata"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="final-cta">
+
+            <div class="final-cta-overlay"></div>
+
+            <div class="container">
+
+                <div class="final-cta-content">
+
+                    <span class="section-eyebrow light">
+                        READY TO GET STARTED?
+                    </span>
+
+                    <h2>
+                        Find the part that
+                        <span>keeps you moving.</span>
+                    </h2>
+
+                    <p>
+                        Browse our spare parts collection and
+                        find the right component for your vehicle.
+                    </p>
+
+                    <div class="final-cta-actions">
+
+                        <a
+                            href="products.html"
+                            class="primary-button"
+                        >
+                            Shop Spare Parts
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M5 12h13"></path>
+                                <path d="M13 6l6 6-6 6"></path>
+                            </svg>
+
+                        </a>
+
+                        <a
+                            href="About.html"
+                            class="secondary-button"
+                        >
+                            Contact Dana
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <!-- Brand -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="brand footer-logo"
+                    >
+
+                        <span class="brand-logo">
+                            <img
+                                src="images/Logo.png.webp"
+                                alt="Dana Auto Parts"
+                            >
+                        </span>
+
+                        <span class="brand-text">
+                            <strong>DANA</strong>
+                            <small>AUTO PARTS</small>
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        Quality spare parts for heavy vehicles,
+                        backed by dependable service.
+                    </p>
+
+
+                    <div class="footer-socials">
+
+                        <a
+                            href="#"
+                            aria-label="Facebook"
+                        >
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v5h3v-5h3l1-3h-4V9c0-.6.4-1 1-1z"></path>
+                            </svg>
+                        </a>
+
+
+                        <a
+                            href="#"
+                            aria-label="Instagram"
+                        >
+                            <svg viewBox="0 0 24 24">
+                                <rect
+                                    x="4"
+                                    y="4"
+                                    width="16"
+                                    height="16"
+                                    rx="4"
+                                ></rect>
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="3.5"
+                                ></circle>
+
+                                <circle
+                                    cx="17.5"
+                                    cy="6.5"
+                                    r="1"
+                                    class="fill"
+                                ></circle>
+                            </svg>
+                        </a>
+
+
+                        <a
+                            href="#"
+                            aria-label="Twitter"
+                        >
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18.5 4h2.8l-6.1 7 7.2 9h-5.6l-4.4-5.5L7.6 20H4.8l6.5-7.5L4.4 4H10l4 5.1L18.5 4zm-1 14h1.6L9.4 5.9H7.7L17.5 18z"></path>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Shop -->
+
+                <div class="footer-column">
+
+                    <h3>Shop</h3>
+
+                    <a href="products.html">
+                        All Products
+                    </a>
+
+                    <a href="#featured-categories">
+                        Engine & Mechanical
+                    </a>
+
+                    <a href="#featured-categories">
+                        Brake Systems
+                    </a>
+
+                    <a href="#featured-categories">
+                        Electrical
+                    </a>
+
+                    <a href="#vehicle-categories">
+                        Shop by Vehicle
+                    </a>
+
+                </div>
+
+
+                <!-- Company -->
+
+                <div class="footer-column">
+
+                    <h3>Company</h3>
+
+                    <a href="About.html">
+                        About Dana
+                    </a>
+
+                    <a href="customer_faq.php">
+                        FAQ
+                    </a>
+
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="Account.html">
+                        My Account
+                    </a>
+
+                    <a href="Cart.php">
+                        Shopping Cart
+                    </a>
+
+                </div>
+
+
+                <!-- Contact -->
+
+                <div class="footer-column footer-contact">
+
+                    <h3>Get in touch</h3>
+
+                    <p>
+                        Have a question about a spare part?
+                        Talk to our team.
+                    </p>
+
+
+                    <a href="mailto:support@danaauto.com">
+                        support@danaauto.com
+                    </a>
+
+                    <a href="tel:+94123456789">
+                        +94 123 456 789
+                    </a>
+
+
+                    <span class="footer-note">
+                        Sri Lanka
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Dana Lanka Enterprises.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Dana Auto Parts
+                </p>
+
+            </div>
+
         </div>
-    </nav>
-    
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
 
     <script>
-        // Toggle navbar on mobile
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.querySelector('.nav-links');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
+        /*
+         * Mobile navigation
+         */
+
+        const mobileMenuButton =
+            document.getElementById(
+                "mobileMenuButton"
+            );
+
+        const navLinks =
+            document.getElementById(
+                "navLinks"
+            );
+
+
+        mobileMenuButton.addEventListener(
+            "click",
+            () => {
+
+                const isOpen =
+                    navLinks.classList.toggle(
+                        "mobile-open"
+                    );
+
+                mobileMenuButton.setAttribute(
+                    "aria-expanded",
+                    isOpen
+                );
+
+            }
+        );
+
+
+        /*
+         * Close mobile navigation
+         * when a link is clicked.
+         */
+
+        document
+            .querySelectorAll(
+                ".nav-link"
+            )
+            .forEach((link) => {
+
+                link.addEventListener(
+                    "click",
+                    () => {
+
+                        navLinks.classList.remove(
+                            "mobile-open"
+                        );
+
+                        mobileMenuButton.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                    }
+                );
+
+            });
+
+
+        /*
+         * Navigate to selected spare part.
+         */
+
+        function goToPart(selectElement) {
+
+            const selectedValue =
+                selectElement.value;
+
+            if (selectedValue) {
+
+                window.location.href =
+                    selectedValue;
+
+            }
+
+        }
+
+
+        /*
+         * Current year
+         */
+
+        document.getElementById(
+            "currentYear"
+        ).textContent =
+            new Date().getFullYear();
+
+
+        /*
+         * Header shadow when scrolling.
+         */
+
+        const header =
+            document.querySelector(
+                ".site-header"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            () => {
+
+                if (
+                    window.scrollY > 20
+                ) {
+
+                    header.classList.add(
+                        "scrolled"
+                    );
+
+                } else {
+
+                    header.classList.remove(
+                        "scrolled"
+                    );
+
+                }
+
+            },
+            { passive: true }
+        );
+
     </script>
 
-
-
-    <!-- Parallax Section 1 -->
-    <div class="parallax parallax-1">
-        <h1>Upgrade Your Vehicle  with <br>Top-Notch Spare Parts</h1>
-        <p>Welcome to Dana Auto Parts! <br>We’re thrilled 
-            to have you here. As part of Dana Lanka Enterprises,
-            we offer a wide selection of high-quality spare parts for
-             heavy vehicles. Our goal is to provide you with the best 
-             products and exceptional service to keep your vehicles running
-             smoothly.Thank you for choosing us.</p>
-
-             <button class="explore-btn" onclick="window.location.href='products.html';">Explore Now</button>
-
-         </div>
-
-            
-       
-    </div>
-
-
-    
-
-        
-
-    
-
-    <!-- Content Section -->
-    <section class="content">
-        
-        <div class="categories">
-        
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/coverphoto1.png.png" width="auto" height="400px">
-                </div>
-    
-                <div class="col-3">
-                <img src="images/coverphoto2.png.png" width="auto" height="400px" >
-            </div>
-    
-                <div class="col-3">
-                <img src="images/coverphoto3.png.png" width="auto" height="400px">
-            </div>
-
-
-
-        
-            
-
-
-        </div>
-    </div>
-    </section>
-
-    <!-- Parallax Section 2 -->
-    <div class="parallax parallax-2">
-
-       
-        <section class="content">
-            <div class="select-spare-parts">
-                <h2>Select Your Spare Part</h2>
-        
-                <div class="select-row">
-                    <!-- Engine Spare Part -->
-                    <div class="select-item">
-                        <label for="engine-parts">Choose Engine Parts:</label>
-                        <select id="engine-parts" name="engine-parts" onchange="location = this.value;">
-                            <option value="">Select a Part</option>
-                            <option value="products/TimingBelt.html">Timing Belt</option>
-                           
-                            <option value="products/CVAxleShaft.html">Axle Shaft</option>
-                            <option value="products/StreeringGear.html">GearBox</option>
-                            <option value="products/Alternator.html">Alternator</option>
-                        </select>
-                    </div>
-        
-                    <!-- Brake Spare Part -->
-                    <div class="select-item">
-                        <label for="brake-parts">Choose Brake Parts:</label>
-                        <select id="brake-parts" name="brake-parts" onchange="location = this.value;">
-                            <option value="">Select a Part</option>
-                            <option value="products/Brakepads.html">Brake Pads</option>
-                            <option value="products/BrakeLiner.html">Brake Liner</option>
-                            <option value="products/brakeRotors.html">Brake Disk</option>
-                        </select>
-                    </div>
-        
-                    <!-- Shocks Spare Part -->
-                    <div class="select-item">
-                        <label for="shocks-parts">Choose Shocks Parts:</label>
-                        <select id="shocks-parts" name="shocks-parts" onchange="location = this.value;">
-                            <option value="">Select a Part</option>
-                            <option value="products/Shocks.html">Shocks</option>
-                           
-                        </select>
-                    </div>
-        
-                    <!-- Interior Parts -->
-                    <div class="select-item">
-                        <label for="interior-parts">Choose Engine parts:</label>
-                        <select id="interior-parts" name="interior-parts" onchange="location = this.value;">
-                            <option value="">Select a Part</option>
-                            <option value="products/MountingBush.html">Mounting Bush</option>
-                            <option value="products/StarterMoter.html">Starter Moter</option>
-                            <option value="products/Radiator.html">Radiator</option>
-                        </select>
-                    </div>
-        
-                    <!-- Dashboard Parts -->
-                    <div class="select-item">
-                        <label for="dashboard-parts">Choose Dashboard Parts:</label>
-                        <select id="dashboard-parts" name="dashboard-parts" onchange="location = this.value;">
-                            <option value="">Select a Part</option>
-                            <option value="products/DashBoard.html">Dashboard Miter</option>
-                            
-                        </select>
-                    </div>
-        
-                    <!-- Battery Spare Part -->
-                    <div class="select-item">
-                        <label for="battery-parts">Choose Electric Parts:</label>
-                        <select id="battery-parts" name="battery-parts" onchange="location = this.value;">
-                            <option value="">Select a Part</option>
-                            <option value="products/WiringHarness.html">Wiring Harness</option>
-                     
-                        </select>
-                    </div>
-                </div>
-        
-                <!-- Optional "Find My Part" Button -->
-                <div class="button-container">
-                    <button class="find-part-btn">Find My Part</button>
-                </div>
-            </div>
-        </section>
-        
-
-
-        
-        
-        
-        
-        
-            
-            
-          
-        
-    </div>
-
-    <div class="parallax parallax-4">
-        <h1>Our Services</h1>
-    </div>
-
-    <!-- Content Section -->
-    <section class="content">
-        
-        <div class="vehicle-types">
-            <h2>Our Heavy Vehicle Spare Parts Selection</h2><br><br>
-            <p>
-                Dana Auto Parts proudly offers specialized spare parts for a range of heavy vehicles, ensuring 
-                you find exactly what you need. We provide components for popular models like the Indian Star Bus, 
-                Leyland Bus, 13/13 Truck, Isuzu Truck, and Mitsubishi Lorry. Click on any vehicle below to explore 
-                available spare parts specifically tailored for that model.
-            </p>
-            <br>
-    
-            
-            
-          
-        </div>
-    <div class="vehicle-row">
-        <div class="vehicle-col">
-            <a href="products.php" class="vehicle-link">
-                <div class="vehicle-box">
-                    <img src="images/tatabus2.png.png" alt="Indian Star Bus" width="auto" height="200px">
-                    <p>Indian Star Bus</p>
-                </div>
-            </a>
-        </div>
-    
-        <div class="vehicle-col">
-            <a href="products.php" class="vehicle-link">
-                <div class="vehicle-box">
-                    <img src="images/damrajina.png.png" alt="Leyland Bus" width="auto" height="200px">
-                    <p>Leyland Bus</p>
-                </div>
-            </a>
-        </div>
-    
-        <div class="vehicle-col">
-            <a href="products.php" class="vehicle-link">
-                <div class="vehicle-box">
-                    <img src="images/newlorry.png.png" alt="13/13 Truck" width="auto" height="200px">
-                    <p>13/13 Truck</p>
-                </div>
-            </a>
-        </div>
-    
-        <div class="vehicle-col">
-            <a href="products.php" class="vehicle-link">
-                <div class="vehicle-box">
-                    <img src="images/isuzutruck2.png.png" alt="Isuzu Truck" width="auto" height="200px">
-                    <p>Isuzu Truck</p>
-                </div>
-            </a>
-        </div>
-    
-        <div class="vehicle-col">
-            <a href="products.php" class="vehicle-link">
-                <div class="vehicle-box">
-                    <img src="images/canter.png.png" alt="Mitsubishi Lorry" width="auto" height="200px">
-                    <p>Mitsubishi Lorry</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    </section>
-
-   
-
-    <!-- Parallax Section 3 -->
-    <div class="parallax parallax-3">
-        <h1>Why Choose Dana Auto Parts?</h1>
-       
-        <p>At Dana Auto Parts, we believe in quality and reliability. Our spare parts are sourced from 
-            trusted manufacturers to ensure that your heavy vehicles perform at their best. We provide 
-            a variety of products to meet all your needs, including brake systems, engine parts, and more. 
-            With our expert team and commitment to customer satisfaction, you can trust us to deliver 
-            exceptional service every time.</p>
-
-    </div>
-
-    <section class="content">
-        <div class="brands">
-            <h2>Our Trusted Partners</h2><br><br>
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-5">
-                        <img src="images/ashoklogo.png.png" alt="Ashok Logo" width="auto" height="200px">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/isuzulogo.png.png" alt="Isuzu Logo" width="auto" height="200px">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/newMitsubishi-logo.png" alt="Mitsubishi Logo" width="auto" height="200px">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/tatalogo.png.webp" alt="Tata Logo" width="auto" height="200px">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-   
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Contact Info Section -->
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p>For inquiries or support, feel free to reach out to us:</p>
-                <p><strong>Email:</strong> support@danaauto.com</p>
-                <p><strong>Phone:</strong> +94 123 456 789</p>
-            </div>
-    
-            <!-- Quick Links Section -->
-            <div class="footer-section quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="customer_faq.php">FAQ</a></li>
-                    <li><a href="privacy.html">privacy policy</a></li>
-                    <li><a href="About.html">Contact Us</a></li>
-                </ul>
-            </div>
-    
-            <!-- About Us Section -->
-            <div class="footer-section about-us">
-                <h3>About Us</h3>
-                <p>At Dana Auto Parts, we strive to provide the highest quality spare parts for heavy vehicles. Our team is committed to offering exceptional service and products to keep your vehicles in top condition.</p>
-            </div>
-    
-            <!-- Social Media Section -->
-            <div class="footer-section social-media">
-                <h3>Follow Us</h3>
-                <a href="#" class="social-icon"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#" class="social-icon"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                <a href="#" class="social-icon"><img src="images/twitter-icon.png" alt="Twitter"></a>
-            </div>
-        </div>
-    </footer>
-    
-    
 </body>
 </html>

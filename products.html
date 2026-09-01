@@ -1,574 +1,3864 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="products.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Shop genuine automotive spare parts from Dana Auto Parts. Browse Toyota, Mitsubishi, Isuzu, TATA and Layland vehicle parts."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b0b0c"
+    >
+
+    <title>Products | Dana Auto Parts</title>
+
+    <link
+        rel="stylesheet"
+        href="products.css"
+    >
 </head>
+
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#"><img src="images/Logo.png.webp" alt="Dana Auto Parts">Dana Auto Parts</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Account.html">Account</a></li>
-            <li><a href="Cart.php"><img src="images/cart.png.jpg" width="auto" height="30px" alt="Cart Icon"></a></li> <!-- Replaced Cart link with image -->
-        </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-    
-
-    <script>
-        // Toggle navbar on mobile
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-    </script>
 
 
+<!-- =====================================================
+     ANNOUNCEMENT BAR
+===================================================== -->
 
-<section id="hero">
-       
+<div class="announcement-bar">
 
+    <div class="announcement-inner">
 
+        <span>
+            Genuine & quality-tested automotive parts
+        </span>
 
-</section>
+        <span class="announcement-divider"></span>
 
+        <strong>
+            Islandwide delivery available
+        </strong>
 
-<div class="starbus">
-    <h2>All the Products</h2>
+    </div>
+
 </div>
 
 
 
+<!-- =====================================================
+     HEADER / NAVIGATION
+===================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar">
 
 
-<section id="product1" class="section-p1">
-    
-    <div class="pro-container">
-       
-        <div class="pro">
-            <a href="products/TimingBelt.html" id="timing belt">
-            
-            <img src="images/34.png" alt="">
-            
-            <div class="des">
-                
-                <span>Toyota</span>
-                <h3>Timing Belt</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 5000.00</h4>
-               
-                
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-       
-            
-        </div>
+        <!-- BRAND -->
 
-       
-        <div class="pro">
-            <a href="products/Brakepads.html" id="Brake pad">
-            <img src="images/twelve.png.png" alt="">
-            <div class="des">
-                <span>Mitsubishi</span>
-                <h3>Brake Pads</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 15000.00</h4>
-               
-                
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-       
-        </div>
+        <a
+            href="index.html"
+            class="brand"
+            aria-label="Dana Auto Parts Home"
+        >
 
-       
-        <div class="pro">
-            <a href="products/Alternator.html" id="alternator">
-            <img src="images/14.png.jpg" alt="">
-            <div class="des">
-                <span>Isuzu</span>
-                <h3>Alternator</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 35000.00</h4>
-               
-           
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
+            <span class="brand-logo">
 
-        
-        <div class="pro">
-            <a href="products/MountingBush.html" id="mounting">
-            <img src="images/four.png.png" alt="">
-            <div class="des">
-                <span>Totota</span>
-                <h3>Mounting Bush</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 3000.00</h4>
-               
-          
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-       
-        <div class="pro">
-            <a href="products/BrakeLiner.html" id="brakeLiner">
-            <img src="images/five.png.jpg" alt="">
-            <div class="des">
-                <span>Laylend</span>
-                <h3>Brake Liner</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 10000.00</h4>
-               
-           
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-        
-        <div class="pro">
-            <a href="products/HeadLight.html" id="headlight">
-       
-            <img src="images/20.png" alt="">
-            <div class="des">
-                
-                <span>Isuzu</span>
-                <h3>HeadLights</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 50000.00</h4>
-               
-           
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-        
-        <div class="pro">
-            <a href="products/StarterMoter.html" id="starter">
-            
-            <img src="images/27.png" alt="">
-            <div class="des">
-                <span>TATA</span>
-                <h3>Starter Moter</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 35000.00</h4>
-               
-          
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-       
-        <div class="pro">
-            <a href="products/IgnitionCoil.html" id="Ignition">
-            <img src="images/31.png" alt="">
-            <div class="des">
-                <span>TATA</span>
-                <h3>Ignition coil</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 2000.00</h4>
-               
-         
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-        
+                <img
+                    src="images/Logo.png.webp"
+                    alt="Dana Auto Parts Logo"
+                >
 
-        <div class="pro">
-            <a href="products/Shocks.html" id="shocks">
-            <img src="images/41.png" alt="">
-            <div class="des">
-                <span>Mitsubishi</span>
-                <h3>Shocks </h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 25000.00</h4>
-               
-         
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-       
-        
-        <div class="pro">
-            <a href="products/WheelHub.html" id="Wheel">
-            <img src="images/42.png" alt="">
-            <div class="des">
-                <span>Mitsubushi</span>
-                <h3>Wheel Hub assembly</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 8000.00</h4>
-           
-                
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
+            </span>
 
-        
-        <div class="pro">
-            <a href="products/Radiator.html" id="radiator">
-            <img src="images/44.png" alt="">
-            <div class="des">
-                <span>Isuzu</span>
-                <h3>Radiator</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 20000.00</h4>
-               
-           
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
+            <span class="brand-text">
 
-       
-        <div class="pro">
-            <a href="products/Sparkplugs.html" id="spark">
-            <img src="images/45.png" alt="">
-            <div class="des">
-                <span>Toyota</span>
-                <h3>Spark Plugs</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 250.00</h4>
-               
-         
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-       
-       
-        <div class="pro">
-            <a href="products/LeafSpring.html" id="spring">
-            <img src="images/46.png" alt="">
-            <div class="des">
-                <span>TATA</span>
-                <h3>Leaf Spring</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 35000.00</h4>
-               
-            
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
+                <strong>DANA</strong>
 
-       
-        <div class="pro">
-            <a href="products/StreeringGear.html" id="gear">
-            <img src="images/47.png" alt="">
-            <div class="des">
-                <span>Laylend</span>
-                <h3>streering Gearbox</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 15000.00</h4>
-               
-           
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
+                <small>AUTO PARTS</small>
 
-        
-        <div class="pro">
-            <a href="products/AxleShaft.html" id="axle">
-            <img src="images/48.png" alt="">
-            <div class="des">
-                <span>TATA</span>
-                <h3>Axle Shaft</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 45000.00</h4>
-               
-           
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
-        
-       
-        <div class="pro">
-            <a href="products/TurboCharger.html" id="turbo">
-            <img src="images/turbo2.jpg" alt="">
-            <div class="des">
-                <span>Turbocharger</span>
-                <h3>Mitsubishi</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 20000.00</h4>
-               
-        
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
+            </span>
 
-       
-        <div class="pro">
-            <a href="products/CVAxleShaft.html" id="axle">
-            <img src="images/51.png" alt="">
-            <div class="des">
-                <span>Laylend</span>
-                <h3>Cv Axle Shaft</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 10000.00</h4>
-            
-                
-            </div>
         </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
-        </div>
 
-       
-        <div class="pro">
-            <a href="products/AirFiler.html" id="AirFilter">
-            <img src="images/52.png" alt="">
-            <div class="des">
-                <span>Isuzu</span>
-                <h3>Air filter</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 1000.00</h4>
-               
-            
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
+
+
+        <!-- NAVIGATION -->
+
+        <div
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a
+                href="index.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="products.html"
+                class="nav-link active"
+            >
+                Products
+            </a>
+
+            <a
+                href="About.html"
+                class="nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="Account.html"
+                class="nav-link"
+            >
+                Account
+            </a>
+
         </div>
 
 
-        
-        <div class="pro">
-            <a href="products/WiringHarness.html" id="wiring">
-            <img src="images/54.png.jpg" alt="">
-            <div class="des">
-                <span>TATA</span>
-                <h3>Wiring Harness</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 22000.00</h4>
-               
-           
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
+
+        <!-- NAV ACTIONS -->
+
+        <div class="nav-actions">
+
+            <button
+                type="button"
+                class="nav-icon-button search-button"
+                id="headerSearchButton"
+                aria-label="Search products"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="6.5"
+                    ></circle>
+
+                    <path
+                        d="M16 16l5 5"
+                    ></path>
+                </svg>
+
+            </button>
+
+
+            <a
+                href="Account.html"
+                class="nav-icon-button"
+                aria-label="My account"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <circle
+                        cx="12"
+                        cy="8"
+                        r="3.5"
+                    ></circle>
+
+                    <path
+                        d="M5 21c.7-4 3.1-6 7-6s6.3 2 7 6"
+                    ></path>
+
+                </svg>
+
+            </a>
+
+
+            <a
+                href="Cart.php"
+                class="cart-button"
+                aria-label="Shopping cart"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"
+                    ></path>
+
+                    <circle
+                        cx="10"
+                        cy="20"
+                        r="1"
+                    ></circle>
+
+                    <circle
+                        cx="18"
+                        cy="20"
+                        r="1"
+                    ></circle>
+
+                </svg>
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </a>
+
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
         </div>
 
-        
-        <div class="pro">
-            <a href="products/DashBoard.html" id="dashboard">
-            <img src="images/56.png" alt="">
-            <div class="des">
-                <span>Mitsubishi</span>
-                <h3>Dashboard Gauges</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 25000.00</h4>
-            
-             
-            </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-        
-        
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     PRODUCTS HERO
+===================================================== -->
+
+<main>
+
+
+<section class="products-hero">
+
+    <div class="products-hero-background"></div>
+
+    <div class="products-hero-overlay"></div>
+
+
+    <div class="products-hero-content container">
+
+        <div class="products-breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <span>
+                Products
+            </span>
+
         </div>
-       
-      
-        <div class="pro">
-            <a href="products/BrakeRotors.html" id="brake">
-            <img src="images/ten.png.jpg" alt="">
-            <div class="des">
-                <span>Laylend</span>
-                <h3>Brake Rotors</h3>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4>Rs 15000.00</h4>
-               
-           
+
+
+        <span class="section-eyebrow light">
+            DANA AUTO PARTS
+        </span>
+
+
+        <h1>
+            Parts built for
+            <span>the road ahead.</span>
+        </h1>
+
+
+        <p>
+            Explore our collection of automotive spare parts
+            from trusted brands. Find the right part for your
+            vehicle with confidence.
+        </p>
+
+
+        <div class="products-hero-stats">
+
+            <div class="hero-stat">
+
+                <strong>
+                    20+
+                </strong>
+
+                <span>
+                    Parts available
+                </span>
+
             </div>
-        </a>
-            <a href="#" ><i class="fa fa-cart-arrow-down " aria-hidden="true"></i></a>
-            
-            
+
+
+            <div class="hero-stat-divider"></div>
+
+
+            <div class="hero-stat">
+
+                <strong>
+                    5
+                </strong>
+
+                <span>
+                    Major brands
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat-divider"></div>
+
+
+            <div class="hero-stat">
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Customer focused
+                </span>
+
+            </div>
+
         </div>
-        
 
     </div>
 
-    </section>
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCT SHOP AREA
+===================================================== -->
+
+<section class="shop-section">
+
+    <div class="container">
+
+
+        <!-- SHOP HEADER -->
+
+        <div class="shop-heading">
+
+            <div>
+
+                <span class="section-eyebrow">
+                    OUR CATALOGUE
+                </span>
+
+                <h2>
+                    Find the right
+                    <span>part.</span>
+                </h2>
+
+                <p>
+                    Browse our available automotive components
+                    or use the filters to quickly find what you need.
+                </p>
+
+            </div>
+
+
+            <div class="results-summary">
+
+                <strong id="productCount">
+                    20
+                </strong>
+
+                <span>
+                    products
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SEARCH + SORT TOOLBAR
+        ================================================== -->
+
+        <div class="product-toolbar">
+
+
+            <div class="product-search">
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="6.5"
+                    ></circle>
+
+                    <path
+                        d="M16 16l5 5"
+                    ></path>
+
+                </svg>
+
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Search spare parts..."
+                    autocomplete="off"
+                    aria-label="Search products"
+                >
+
+
+                <button
+                    type="button"
+                    id="clearSearch"
+                    class="clear-search"
+                    aria-label="Clear search"
+                    hidden
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <div class="toolbar-actions">
+
+                <button
+                    type="button"
+                    class="filter-toggle"
+                    id="filterToggle"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path d="M4 6h16"></path>
+                        <path d="M7 12h10"></path>
+                        <path d="M10 18h4"></path>
+
+                    </svg>
+
+                    Filters
+
+                    <span id="filterCount">
+                        0
+                    </span>
+
+                </button>
+
+
+                <div class="sort-wrapper">
+
+                    <label for="sortProducts">
+                        Sort
+                    </label>
+
+                    <select id="sortProducts">
+
+                        <option value="featured">
+                            Featured
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="price-high">
+                            Price: High to Low
+                        </option>
+
+                        <option value="name">
+                            Name: A–Z
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SHOP LAYOUT
+        ================================================== -->
+
+        <div class="shop-layout">
+
+
+            <!-- =================================================
+                 FILTER SIDEBAR
+            ================================================== -->
+
+            <aside
+                class="filter-sidebar"
+                id="filterSidebar"
+            >
+
+                <div class="filter-header">
+
+                    <div>
+
+                        <span>
+                            FILTER PRODUCTS
+                        </span>
+
+                        <h3>
+                            Refine your search
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="closeFilters"
+                        class="close-filter"
+                        aria-label="Close filters"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+
+                <!-- BRAND FILTER -->
+
+                <div class="filter-group">
+
+                    <div class="filter-group-title">
+
+                        <span>
+                            Brand
+                        </span>
+
+                    </div>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="Toyota"
+                        >
+
+                        <span>
+                            Toyota
+                        </span>
+
+                        <small>
+                            4
+                        </small>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="Mitsubishi"
+                        >
+
+                        <span>
+                            Mitsubishi
+                        </span>
+
+                        <small>
+                            5
+                        </small>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="Isuzu"
+                        >
+
+                        <span>
+                            Isuzu
+                        </span>
+
+                        <small>
+                            5
+                        </small>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="TATA"
+                        >
+
+                        <span>
+                            TATA
+                        </span>
+
+                        <small>
+                            4
+                        </small>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="brand"
+                            value="Layland"
+                        >
+
+                        <span>
+                            Layland
+                        </span>
+
+                        <small>
+                            4
+                        </small>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- CATEGORY FILTER -->
+
+                <div class="filter-group">
+
+                    <div class="filter-group-title">
+
+                        <span>
+                            Category
+                        </span>
+
+                    </div>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="Engine"
+                        >
+
+                        <span>
+                            Engine
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="Braking"
+                        >
+
+                        <span>
+                            Braking
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="Electrical"
+                        >
+
+                        <span>
+                            Electrical
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="Suspension"
+                        >
+
+                        <span>
+                            Suspension
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="checkbox"
+                            name="category"
+                            value="Body"
+                        >
+
+                        <span>
+                            Body & Interior
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- PRICE FILTER -->
+
+                <div class="filter-group">
+
+                    <div class="filter-group-title">
+
+                        <span>
+                            Price range
+                        </span>
+
+                    </div>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="under-5000"
+                        >
+
+                        <span>
+                            Under Rs. 5,000
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="5000-15000"
+                        >
+
+                        <span>
+                            Rs. 5,000 – 15,000
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="15000-30000"
+                        >
+
+                        <span>
+                            Rs. 15,000 – 30,000
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="over-30000"
+                        >
+
+                        <span>
+                            Over Rs. 30,000
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <button
+                    type="button"
+                    class="clear-filters"
+                    id="clearFilters"
+                >
+
+                    Clear all filters
+
+                </button>
+
+            </aside>
+
+
+
+            <!-- =================================================
+                 PRODUCTS CONTENT
+            ================================================== -->
+
+            <div class="products-content">
+
+
+                <!-- ACTIVE FILTERS -->
+
+                <div
+                    class="active-filters"
+                    id="activeFilters"
+                    hidden
+                ></div>
+
+
+
+                <!-- PRODUCT GRID -->
+
+                <div
+                    class="product-grid"
+                    id="productGrid"
+                >
+
+
+
+                    <!-- =================================================
+                         PRODUCT 01
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Timing Belt"
+                        data-brand="Toyota"
+                        data-category="Engine"
+                        data-price="5000"
+                    >
+
+                        <a
+                            href="products/TimingBelt.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Featured
+                                </span>
+
+                                <img
+                                    src="images/34.png"
+                                    alt="Toyota Timing Belt"
+                                    loading="lazy"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="product-quick"
+                                    aria-label="View Timing Belt"
+                                >
+                                    View
+                                </button>
+
+                            </div>
+
+                        </a>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Toyota
+                            </span>
+
+                            <h3>
+                                <a href="products/TimingBelt.html">
+                                    Timing Belt
+                                </a>
+                            </h3>
+
+
+                            <div class="product-rating">
+
+                                <span class="stars">
+                                    ★★★★★
+                                </span>
+
+                                <span>
+                                    5.0
+                                </span>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+
+                                    <span>
+                                        Rs. 5,000
+                                    </span>
+
+                                </div>
+
+
+                                <a
+                                    href="products/TimingBelt.html"
+                                    class="product-cart"
+                                    aria-label="View Timing Belt"
+                                >
+
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"
+                                        ></path>
+                                        <circle
+                                            cx="10"
+                                            cy="20"
+                                            r="1"
+                                        ></circle>
+                                        <circle
+                                            cx="18"
+                                            cy="20"
+                                            r="1"
+                                        ></circle>
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 02
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Brake Pads"
+                        data-brand="Mitsubishi"
+                        data-category="Braking"
+                        data-price="15000"
+                    >
+
+                        <a
+                            href="products/Brakepads.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Popular
+                                </span>
+
+                                <img
+                                    src="images/twelve.png.png"
+                                    alt="Mitsubishi Brake Pads"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Mitsubishi
+                            </span>
+
+                            <h3>
+                                <a href="products/Brakepads.html">
+                                    Brake Pads
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 15,000</span>
+                                </div>
+
+                                <a
+                                    href="products/Brakepads.html"
+                                    class="product-cart"
+                                    aria-label="View Brake Pads"
+                                >
+
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 03
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Alternator"
+                        data-brand="Isuzu"
+                        data-category="Electrical"
+                        data-price="35000"
+                    >
+
+                        <a
+                            href="products/Alternator.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/14.png.jpg"
+                                    alt="Isuzu Alternator"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Isuzu
+                            </span>
+
+                            <h3>
+                                <a href="products/Alternator.html">
+                                    Alternator
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 35,000</span>
+                                </div>
+
+                                <a
+                                    href="products/Alternator.html"
+                                    class="product-cart"
+                                    aria-label="View Alternator"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 04
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Mounting Bush"
+                        data-brand="Toyota"
+                        data-category="Suspension"
+                        data-price="3000"
+                    >
+
+                        <a
+                            href="products/MountingBush.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Value
+                                </span>
+
+                                <img
+                                    src="images/four.png.png"
+                                    alt="Toyota Mounting Bush"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Toyota
+                            </span>
+
+                            <h3>
+                                <a href="products/MountingBush.html">
+                                    Mounting Bush
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 3,000</span>
+                                </div>
+
+                                <a
+                                    href="products/MountingBush.html"
+                                    class="product-cart"
+                                    aria-label="View Mounting Bush"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 05
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Brake Liner"
+                        data-brand="Layland"
+                        data-category="Braking"
+                        data-price="10000"
+                    >
+
+                        <a
+                            href="products/BrakeLiner.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/five.png.jpg"
+                                    alt="Layland Brake Liner"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Layland
+                            </span>
+
+                            <h3>
+                                <a href="products/BrakeLiner.html">
+                                    Brake Liner
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 10,000</span>
+                                </div>
+
+                                <a
+                                    href="products/BrakeLiner.html"
+                                    class="product-cart"
+                                    aria-label="View Brake Liner"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 06
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Headlights"
+                        data-brand="Isuzu"
+                        data-category="Body"
+                        data-price="50000"
+                    >
+
+                        <a
+                            href="products/HeadLight.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Premium
+                                </span>
+
+                                <img
+                                    src="images/20.png"
+                                    alt="Isuzu Headlights"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Isuzu
+                            </span>
+
+                            <h3>
+                                <a href="products/HeadLight.html">
+                                    Headlights
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 50,000</span>
+                                </div>
+
+                                <a
+                                    href="products/HeadLight.html"
+                                    class="product-cart"
+                                    aria-label="View Headlights"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 07
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Starter Motor"
+                        data-brand="TATA"
+                        data-category="Electrical"
+                        data-price="35000"
+                    >
+
+                        <a
+                            href="products/StarterMoter.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/27.png"
+                                    alt="TATA Starter Motor"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                TATA
+                            </span>
+
+                            <h3>
+                                <a href="products/StarterMoter.html">
+                                    Starter Motor
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 35,000</span>
+                                </div>
+
+                                <a
+                                    href="products/StarterMoter.html"
+                                    class="product-cart"
+                                    aria-label="View Starter Motor"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 08
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Ignition Coil"
+                        data-brand="TATA"
+                        data-category="Electrical"
+                        data-price="2000"
+                    >
+
+                        <a
+                            href="products/IgnitionCoil.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Value
+                                </span>
+
+                                <img
+                                    src="images/31.png"
+                                    alt="TATA Ignition Coil"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                TATA
+                            </span>
+
+                            <h3>
+                                <a href="products/IgnitionCoil.html">
+                                    Ignition Coil
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 2,000</span>
+                                </div>
+
+                                <a
+                                    href="products/IgnitionCoil.html"
+                                    class="product-cart"
+                                    aria-label="View Ignition Coil"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 09
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Shocks"
+                        data-brand="Mitsubishi"
+                        data-category="Suspension"
+                        data-price="25000"
+                    >
+
+                        <a
+                            href="products/Shocks.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/41.png"
+                                    alt="Mitsubishi Shocks"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Mitsubishi
+                            </span>
+
+                            <h3>
+                                <a href="products/Shocks.html">
+                                    Shocks
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 25,000</span>
+                                </div>
+
+                                <a
+                                    href="products/Shocks.html"
+                                    class="product-cart"
+                                    aria-label="View Shocks"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 10
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Wheel Hub Assembly"
+                        data-brand="Mitsubishi"
+                        data-category="Suspension"
+                        data-price="8000"
+                    >
+
+                        <a
+                            href="products/WheelHub.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/42.png"
+                                    alt="Mitsubishi Wheel Hub Assembly"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Mitsubishi
+                            </span>
+
+                            <h3>
+                                <a href="products/WheelHub.html">
+                                    Wheel Hub Assembly
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 8,000</span>
+                                </div>
+
+                                <a
+                                    href="products/WheelHub.html"
+                                    class="product-cart"
+                                    aria-label="View Wheel Hub Assembly"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 11
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Radiator"
+                        data-brand="Isuzu"
+                        data-category="Engine"
+                        data-price="20000"
+                    >
+
+                        <a
+                            href="products/Radiator.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Popular
+                                </span>
+
+                                <img
+                                    src="images/44.png"
+                                    alt="Isuzu Radiator"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Isuzu
+                            </span>
+
+                            <h3>
+                                <a href="products/Radiator.html">
+                                    Radiator
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 20,000</span>
+                                </div>
+
+                                <a
+                                    href="products/Radiator.html"
+                                    class="product-cart"
+                                    aria-label="View Radiator"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 12
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Spark Plugs"
+                        data-brand="Toyota"
+                        data-category="Engine"
+                        data-price="250"
+                    >
+
+                        <a
+                            href="products/Sparkplugs.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Value
+                                </span>
+
+                                <img
+                                    src="images/45.png"
+                                    alt="Toyota Spark Plugs"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Toyota
+                            </span>
+
+                            <h3>
+                                <a href="products/Sparkplugs.html">
+                                    Spark Plugs
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 250</span>
+                                </div>
+
+                                <a
+                                    href="products/Sparkplugs.html"
+                                    class="product-cart"
+                                    aria-label="View Spark Plugs"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 13
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Leaf Spring"
+                        data-brand="TATA"
+                        data-category="Suspension"
+                        data-price="35000"
+                    >
+
+                        <a
+                            href="products/LeafSpring.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/46.png"
+                                    alt="TATA Leaf Spring"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                TATA
+                            </span>
+
+                            <h3>
+                                <a href="products/LeafSpring.html">
+                                    Leaf Spring
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 35,000</span>
+                                </div>
+
+                                <a
+                                    href="products/LeafSpring.html"
+                                    class="product-cart"
+                                    aria-label="View Leaf Spring"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 14
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Steering Gearbox"
+                        data-brand="Layland"
+                        data-category="Suspension"
+                        data-price="15000"
+                    >
+
+                        <a
+                            href="products/StreeringGear.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/47.png"
+                                    alt="Layland Steering Gearbox"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Layland
+                            </span>
+
+                            <h3>
+                                <a href="products/StreeringGear.html">
+                                    Steering Gearbox
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 15,000</span>
+                                </div>
+
+                                <a
+                                    href="products/StreeringGear.html"
+                                    class="product-cart"
+                                    aria-label="View Steering Gearbox"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 15
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Axle Shaft"
+                        data-brand="TATA"
+                        data-category="Suspension"
+                        data-price="45000"
+                    >
+
+                        <a
+                            href="products/AxleShaft.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Premium
+                                </span>
+
+                                <img
+                                    src="images/48.png"
+                                    alt="TATA Axle Shaft"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                TATA
+                            </span>
+
+                            <h3>
+                                <a href="products/AxleShaft.html">
+                                    Axle Shaft
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 45,000</span>
+                                </div>
+
+                                <a
+                                    href="products/AxleShaft.html"
+                                    class="product-cart"
+                                    aria-label="View Axle Shaft"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 16
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Turbocharger"
+                        data-brand="Mitsubishi"
+                        data-category="Engine"
+                        data-price="20000"
+                    >
+
+                        <a
+                            href="products/TurboCharger.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Featured
+                                </span>
+
+                                <img
+                                    src="images/turbo2.jpg"
+                                    alt="Mitsubishi Turbocharger"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Mitsubishi
+                            </span>
+
+                            <h3>
+                                <a href="products/TurboCharger.html">
+                                    Turbocharger
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 20,000</span>
+                                </div>
+
+                                <a
+                                    href="products/TurboCharger.html"
+                                    class="product-cart"
+                                    aria-label="View Turbocharger"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 17
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="CV Axle Shaft"
+                        data-brand="Layland"
+                        data-category="Suspension"
+                        data-price="10000"
+                    >
+
+                        <a
+                            href="products/CVAxleShaft.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/51.png"
+                                    alt="Layland CV Axle Shaft"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Layland
+                            </span>
+
+                            <h3>
+                                <a href="products/CVAxleShaft.html">
+                                    CV Axle Shaft
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 10,000</span>
+                                </div>
+
+                                <a
+                                    href="products/CVAxleShaft.html"
+                                    class="product-cart"
+                                    aria-label="View CV Axle Shaft"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 18
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Air Filter"
+                        data-brand="Isuzu"
+                        data-category="Engine"
+                        data-price="1000"
+                    >
+
+                        <a
+                            href="products/AirFiler.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Value
+                                </span>
+
+                                <img
+                                    src="images/52.png"
+                                    alt="Isuzu Air Filter"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Isuzu
+                            </span>
+
+                            <h3>
+                                <a href="products/AirFiler.html">
+                                    Air Filter
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 1,000</span>
+                                </div>
+
+                                <a
+                                    href="products/AirFiler.html"
+                                    class="product-cart"
+                                    aria-label="View Air Filter"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 19
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Wiring Harness"
+                        data-brand="TATA"
+                        data-category="Electrical"
+                        data-price="22000"
+                    >
+
+                        <a
+                            href="products/WiringHarness.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="images/54.png.jpg"
+                                    alt="TATA Wiring Harness"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                TATA
+                            </span>
+
+                            <h3>
+                                <a href="products/WiringHarness.html">
+                                    Wiring Harness
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 22,000</span>
+                                </div>
+
+                                <a
+                                    href="products/WiringHarness.html"
+                                    class="product-cart"
+                                    aria-label="View Wiring Harness"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 20
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Dashboard Gauges"
+                        data-brand="Mitsubishi"
+                        data-category="Electrical"
+                        data-price="25000"
+                    >
+
+                        <a
+                            href="products/DashBoard.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Featured
+                                </span>
+
+                                <img
+                                    src="images/56.png"
+                                    alt="Mitsubishi Dashboard Gauges"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Mitsubishi
+                            </span>
+
+                            <h3>
+                                <a href="products/DashBoard.html">
+                                    Dashboard Gauges
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 25,000</span>
+                                </div>
+
+                                <a
+                                    href="products/DashBoard.html"
+                                    class="product-cart"
+                                    aria-label="View Dashboard Gauges"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PRODUCT 21
+                    ================================================== -->
+
+                    <article
+                        class="product-card"
+                        data-name="Brake Rotors"
+                        data-brand="Layland"
+                        data-category="Braking"
+                        data-price="15000"
+                    >
+
+                        <a
+                            href="products/BrakeRotors.html"
+                            class="product-image-link"
+                        >
+
+                            <div class="product-image">
+
+                                <span class="product-badge">
+                                    Popular
+                                </span>
+
+                                <img
+                                    src="images/ten.png.jpg"
+                                    alt="Layland Brake Rotors"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                        </a>
+
+                        <div class="product-info">
+
+                            <span class="product-brand">
+                                Layland
+                            </span>
+
+                            <h3>
+                                <a href="products/BrakeRotors.html">
+                                    Brake Rotors
+                                </a>
+                            </h3>
+
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>5.0</span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    <span>Rs. 15,000</span>
+                                </div>
+
+                                <a
+                                    href="products/BrakeRotors.html"
+                                    class="product-cart"
+                                    aria-label="View Brake Rotors"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                                        <circle cx="10" cy="20" r="1"></circle>
+                                        <circle cx="18" cy="20" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EMPTY STATE
+                ================================================== -->
+
+                <div
+                    class="empty-products"
+                    id="emptyProducts"
+                    hidden
+                >
+
+                    <div class="empty-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="6.5"
+                            ></circle>
+
+                            <path
+                                d="M16 16l5 5"
+                            ></path>
+
+                        </svg>
+
+                    </div>
+
+
+                    <h3>
+                        No parts found
+                    </h3>
+
+
+                    <p>
+                        Try another search term or clear your
+                        filters to see more products.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        id="emptyClearButton"
+                    >
+                        Clear filters
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LOAD MORE
+                ================================================== -->
+
+                <div class="load-more-area">
+
+                    <p>
+                        Showing
+                        <strong id="visibleCount">
+                            21
+                        </strong>
+                        of
+                        <strong>
+                            21
+                        </strong>
+                        products
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRUST STRIP
+===================================================== -->
+
+<section class="products-trust">
+
+    <div class="container">
+
+        <div class="trust-grid">
+
+
+            <div class="trust-card">
+
+                <div class="trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M12 3l7 3v5c0 4.8-2.9 8.3-7 10-4.1-1.7-7-5.2-7-10V6l7-3z"
+                        ></path>
+
+                        <path
+                            d="M9 12l2 2 4-4"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Quality checked
+                    </strong>
+
+                    <span>
+                        Reliable parts for your vehicle
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="trust-card">
+
+                <div class="trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M3 6h11v11H3z"
+                        ></path>
+
+                        <path
+                            d="M14 9h4l3 3v5h-7z"
+                        ></path>
+
+                        <circle
+                            cx="7"
+                            cy="19"
+                            r="2"
+                        ></circle>
+
+                        <circle
+                            cx="18"
+                            cy="19"
+                            r="2"
+                        ></circle>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Islandwide delivery
+                    </strong>
+
+                    <span>
+                        We deliver across Sri Lanka
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="trust-card">
+
+                <div class="trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M12 3v18"
+                        ></path>
+
+                        <path
+                            d="M17 7.5c-.7-1.1-2-1.8-3.8-1.8-2.1 0-3.5 1-3.5 2.7 0 4.4 7.8 1.8 7.8 6.2 0 1.8-1.5 2.9-3.9 2.9-1.8 0-3.3-.6-4.2-1.9"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Competitive prices
+                    </strong>
+
+                    <span>
+                        Parts at fair market prices
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="trust-card">
+
+                <div class="trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                        ></circle>
+
+                        <path
+                            d="M12 7v5l3 2"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Expert support
+                    </strong>
+
+                    <span>
+                        Need help choosing a part?
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="products-cta">
+
+    <div class="container">
+
+        <div class="products-cta-content">
+
+            <span class="section-eyebrow light">
+                CAN'T FIND YOUR PART?
+            </span>
+
+            <h2>
+                Tell us what
+                <span>you need.</span>
+            </h2>
+
+            <p>
+                If you cannot find the part you're looking for,
+                contact Dana Auto Parts and our team will help
+                you find the right solution.
+            </p>
+
+            <div class="products-cta-actions">
+
+                <a
+                    href="About.html"
+                    class="primary-button"
+                >
+
+                    Contact us
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M5 12h14"
+                        ></path>
+
+                        <path
+                            d="M13 6l6 6-6 6"
+                        ></path>
+
+                    </svg>
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="secondary-button"
+                >
+                    Back to home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="brand footer-logo"
+                >
+
+                    <span class="brand-logo">
+
+                        <img
+                            src="images/Logo.png.webp"
+                            alt="Dana Auto Parts Logo"
+                        >
+
+                    </span>
+
+                    <span class="brand-text">
+
+                        <strong>DANA</strong>
+
+                        <small>AUTO PARTS</small>
+
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Quality automotive spare parts for
+                    drivers, workshops and businesses across
+                    Sri Lanka.
+                </p>
+
+
+                <div class="footer-socials">
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.7.3-1 1-1z"></path>
+                        </svg>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+
+                            <rect
+                                x="4"
+                                y="4"
+                                width="16"
+                                height="16"
+                                rx="4"
+                            ></rect>
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="3.5"
+                            ></circle>
+
+                            <circle
+                                cx="17.2"
+                                cy="6.8"
+                                r=".8"
+                                fill="currentColor"
+                            ></circle>
+
+                        </svg>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="WhatsApp"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+
+                            <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"></path>
+
+                            <path d="M9 9c.2 2 2 4 4 4 .6 0 1-.2 1.4-.5"></path>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Shop
+                </h3>
+
+                <a href="products.html">
+                    All Products
+                </a>
+
+                <a href="products.html">
+                    Toyota Parts
+                </a>
+
+                <a href="products.html">
+                    Mitsubishi Parts
+                </a>
+
+                <a href="products.html">
+                    Isuzu Parts
+                </a>
+
+                <a href="products.html">
+                    TATA Parts
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="About.html">
+                    About Dana
+                </a>
+
+                <a href="Account.html">
+                    My Account
+                </a>
+
+                <a href="Cart.php">
+                    Shopping Cart
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column footer-contact">
+
+                <h3>
+                    Need help?
+                </h3>
+
+                <p>
+                    Our team is ready to help you
+                    find the right automotive part.
+                </p>
+
+                <a href="tel:+947XXXXXXXX">
+                    +94 XX XXX XXXX
+                </a>
+
+                <a href="mailto:info@danaautoparts.com">
+                    info@danaautoparts.com
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Dana Auto Parts.
+                All rights reserved.
+            </p>
+
+            <p>
+                Built for the road ahead.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     PRODUCT PAGE JAVASCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const productGrid =
+        document.getElementById("productGrid");
+
+    const productCards =
+        Array.from(
+            document.querySelectorAll(".product-card")
+        );
+
+    const productSearch =
+        document.getElementById("productSearch");
+
+    const clearSearch =
+        document.getElementById("clearSearch");
+
+    const sortProducts =
+        document.getElementById("sortProducts");
+
+    const productCount =
+        document.getElementById("productCount");
+
+    const visibleCount =
+        document.getElementById("visibleCount");
+
+    const emptyProducts =
+        document.getElementById("emptyProducts");
+
+    const emptyClearButton =
+        document.getElementById("emptyClearButton");
+
+    const filterToggle =
+        document.getElementById("filterToggle");
+
+    const filterSidebar =
+        document.getElementById("filterSidebar");
+
+    const closeFilters =
+        document.getElementById("closeFilters");
+
+    const clearFilters =
+        document.getElementById("clearFilters");
+
+    const filterCount =
+        document.getElementById("filterCount");
+
+    const activeFilters =
+        document.getElementById("activeFilters");
+
+    const mobileMenuButton =
+        document.getElementById("mobileMenuButton");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+    const headerSearchButton =
+        document.getElementById("headerSearchButton");
+
+
+    const brandFilters =
+        Array.from(
+            document.querySelectorAll(
+                'input[name="brand"]'
+            )
+        );
+
+
+    const categoryFilters =
+        Array.from(
+            document.querySelectorAll(
+                'input[name="category"]'
+            )
+        );
+
+
+    const priceFilters =
+        Array.from(
+            document.querySelectorAll(
+                'input[name="price"]'
+            )
+        );
+
+
+
+    /* =====================================================
+       STATE
+    ===================================================== */
+
+    let activeSearch = "";
+
+
+
+    /* =====================================================
+       MOBILE NAVIGATION
+    ===================================================== */
+
+    mobileMenuButton.addEventListener(
+        "click",
+        () => {
+
+            const isOpen =
+                navLinks.classList.toggle(
+                    "mobile-open"
+                );
+
+            mobileMenuButton.classList.toggle(
+                "active",
+                isOpen
+            );
+
+            mobileMenuButton.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+        }
+    );
+
+
+
+    navLinks
+        .querySelectorAll("a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                () => {
+
+                    navLinks.classList.remove(
+                        "mobile-open"
+                    );
+
+                    mobileMenuButton.classList.remove(
+                        "active"
+                    );
+
+                    mobileMenuButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       HEADER SEARCH
+    ===================================================== */
+
+    headerSearchButton.addEventListener(
+        "click",
+        () => {
+
+            productSearch.focus();
+
+            window.scrollTo({
+                top:
+                    productSearch.getBoundingClientRect()
+                        .top
+                    +
+                    window.scrollY
+                    -
+                    150,
+
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+
+
+    /* =====================================================
+       SEARCH
+    ===================================================== */
+
+    productSearch.addEventListener(
+        "input",
+        event => {
+
+            activeSearch =
+                event.target.value
+                    .trim()
+                    .toLowerCase();
+
+            clearSearch.hidden =
+                activeSearch.length === 0;
+
+            updateProducts();
+
+        }
+    );
+
+
+
+    clearSearch.addEventListener(
+        "click",
+        () => {
+
+            productSearch.value = "";
+
+            activeSearch = "";
+
+            clearSearch.hidden = true;
+
+            updateProducts();
+
+            productSearch.focus();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       FILTER LISTENERS
+    ===================================================== */
+
+    [
+        ...brandFilters,
+        ...categoryFilters,
+        ...priceFilters
+    ]
+    .forEach(filter => {
+
+        filter.addEventListener(
+            "change",
+            updateProducts
+        );
+
+    });
+
+
+
+    /* =====================================================
+       SORT
+    ===================================================== */
+
+    sortProducts.addEventListener(
+        "change",
+        updateProducts
+    );
+
+
+
+    /* =====================================================
+       MOBILE FILTER
+    ===================================================== */
+
+    filterToggle.addEventListener(
+        "click",
+        () => {
+
+            filterSidebar.classList.add(
+                "filter-open"
+            );
+
+            document.body.classList.add(
+                "filter-lock"
+            );
+
+        }
+    );
+
+
+
+    closeFilters.addEventListener(
+        "click",
+        () => {
+
+            filterSidebar.classList.remove(
+                "filter-open"
+            );
+
+            document.body.classList.remove(
+                "filter-lock"
+            );
+
+        }
+    );
+
+
+
+    /* =====================================================
+       CLEAR FILTERS
+    ===================================================== */
+
+    function resetFilters() {
+
+        brandFilters.forEach(
+            filter => filter.checked = false
+        );
+
+        categoryFilters.forEach(
+            filter => filter.checked = false
+        );
+
+        priceFilters.forEach(
+            filter => filter.checked = false
+        );
+
+        productSearch.value = "";
+
+        activeSearch = "";
+
+        clearSearch.hidden = true;
+
+        sortProducts.value = "featured";
+
+        updateProducts();
+
+    }
+
+
+
+    clearFilters.addEventListener(
+        "click",
+        resetFilters
+    );
+
+
+    emptyClearButton.addEventListener(
+        "click",
+        resetFilters
+    );
+
+
+
+    /* =====================================================
+       GET SELECTED FILTERS
+    ===================================================== */
+
+    function getSelectedValues(filters) {
+
+        return filters
+            .filter(filter => filter.checked)
+            .map(filter => filter.value);
+
+    }
+
+
+
+    /* =====================================================
+       PRICE MATCH
+    ===================================================== */
+
+    function matchesPrice(
+        price,
+        selectedPrice
+    ) {
+
+        if (!selectedPrice) {
+            return true;
+        }
+
+
+        switch (selectedPrice) {
+
+            case "under-5000":
+                return price < 5000;
+
+            case "5000-15000":
+                return price >= 5000
+                    && price <= 15000;
+
+            case "15000-30000":
+                return price >= 15000
+                    && price <= 30000;
+
+            case "over-30000":
+                return price > 30000;
+
+            default:
+                return true;
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       UPDATE PRODUCTS
+    ===================================================== */
+
+    function updateProducts() {
+
+        const selectedBrands =
+            getSelectedValues(
+                brandFilters
+            );
+
+
+        const selectedCategories =
+            getSelectedValues(
+                categoryFilters
+            );
+
+
+        const selectedPrice =
+            priceFilters.find(
+                filter => filter.checked
+            )?.value || "";
+
+
+        const searchTerm =
+            activeSearch;
+
+
+        let visibleProducts =
+            productCards.filter(card => {
+
+                const name =
+                    card.dataset.name
+                        .toLowerCase();
+
+                const brand =
+                    card.dataset.brand;
+
+                const category =
+                    card.dataset.category;
+
+                const price =
+                    Number(
+                        card.dataset.price
+                    );
+
+
+                const matchesSearch =
+                    !searchTerm
+                    ||
+                    name.includes(searchTerm)
+                    ||
+                    brand
+                        .toLowerCase()
+                        .includes(searchTerm)
+                    ||
+                    category
+                        .toLowerCase()
+                        .includes(searchTerm);
+
+
+                const matchesBrand =
+                    selectedBrands.length === 0
+                    ||
+                    selectedBrands.includes(
+                        brand
+                    );
+
+
+                const matchesCategory =
+                    selectedCategories.length === 0
+                    ||
+                    selectedCategories.includes(
+                        category
+                    );
+
+
+                const matchesPriceFilter =
+                    matchesPrice(
+                        price,
+                        selectedPrice
+                    );
+
+
+                return (
+                    matchesSearch
+                    &&
+                    matchesBrand
+                    &&
+                    matchesCategory
+                    &&
+                    matchesPriceFilter
+                );
+
+            });
+
+
+
+        /* =================================================
+           SORT
+        ================================================== */
+
+        const sortValue =
+            sortProducts.value;
+
+
+        visibleProducts.sort(
+            (a, b) => {
+
+                const priceA =
+                    Number(a.dataset.price);
+
+                const priceB =
+                    Number(b.dataset.price);
+
+                const nameA =
+                    a.dataset.name;
+
+                const nameB =
+                    b.dataset.name;
+
+
+                if (
+                    sortValue ===
+                    "price-low"
+                ) {
+                    return priceA - priceB;
+                }
+
+
+                if (
+                    sortValue ===
+                    "price-high"
+                ) {
+                    return priceB - priceA;
+                }
+
+
+                if (
+                    sortValue ===
+                    "name"
+                ) {
+                    return nameA.localeCompare(
+                        nameB
+                    );
+                }
+
+
+                return 0;
+
+            }
+        );
+
+
+
+        /* =================================================
+           REBUILD GRID
+        ================================================== */
+
+        visibleProducts.forEach(
+            product => {
+
+                productGrid.appendChild(
+                    product
+                );
+
+            }
+        );
+
+
+
+        /* =================================================
+           SHOW / HIDE
+        ================================================== */
+
+        productCards.forEach(
+            card => {
+
+                card.hidden =
+                    !visibleProducts.includes(
+                        card
+                    );
+
+            }
+        );
+
+
+
+        const count =
+            visibleProducts.length;
+
+
+        productCount.textContent =
+            count;
+
+
+        visibleCount.textContent =
+            count;
+
+
+        emptyProducts.hidden =
+            count !== 0;
+
+
+
+        renderActiveFilters(
+            selectedBrands,
+            selectedCategories,
+            selectedPrice
+        );
+
+
+        updateFilterCount(
+            selectedBrands,
+            selectedCategories,
+            selectedPrice
+        );
+
+    }
+
+
+
+    /* =====================================================
+       ACTIVE FILTER DISPLAY
+    ===================================================== */
+
+    function renderActiveFilters(
+        brands,
+        categories,
+        price
+    ) {
+
+        activeFilters.innerHTML = "";
+
+
+        const values = [
+            ...brands,
+            ...categories
+        ];
+
+
+        if (price) {
+
+            const priceLabels = {
+
+                "under-5000":
+                    "Under Rs. 5,000",
+
+                "5000-15000":
+                    "Rs. 5,000 – 15,000",
+
+                "15000-30000":
+                    "Rs. 15,000 – 30,000",
+
+                "over-30000":
+                    "Over Rs. 30,000"
+
+            };
+
+
+            values.push(
+                priceLabels[price]
+            );
+
+        }
+
+
+        if (activeSearch) {
+
+            values.push(
+                `"${activeSearch}"`
+            );
+
+        }
+
+
+        if (values.length === 0) {
+
+            activeFilters.hidden = true;
+
+            return;
+
+        }
+
+
+        activeFilters.hidden = false;
+
+
+        values.forEach(value => {
+
+            const chip =
+                document.createElement(
+                    "span"
+                );
+
+            chip.className =
+                "filter-chip";
+
+
+            chip.textContent =
+                value;
+
+
+            activeFilters.appendChild(
+                chip
+            );
+
+        });
+
+
+        const clearButton =
+            document.createElement(
+                "button"
+            );
+
+
+        clearButton.type =
+            "button";
+
+
+        clearButton.className =
+            "clear-active";
+
+
+        clearButton.textContent =
+            "Clear";
+
+
+        clearButton.addEventListener(
+            "click",
+            resetFilters
+        );
+
+
+        activeFilters.appendChild(
+            clearButton
+        );
+
+    }
+
+
+
+    /* =====================================================
+       FILTER COUNT
+    ===================================================== */
+
+    function updateFilterCount(
+        brands,
+        categories,
+        price
+    ) {
+
+        const count =
+            brands.length
+            +
+            categories.length
+            +
+            (price ? 1 : 0);
+
+
+        filterCount.textContent =
+            count;
+
+    }
+
+
+
+    /* =====================================================
+       INITIALIZE
+    ===================================================== */
+
+    updateProducts();
+
+
+
+    /* =====================================================
+       CART COUNT
+    ===================================================== */
+
+    try {
+
+        const savedCart =
+            JSON.parse(
+                localStorage.getItem(
+                    "cart"
+                )
+            );
+
+
+        if (
+            Array.isArray(savedCart)
+        ) {
+
+            const totalItems =
+                savedCart.reduce(
+                    (
+                        total,
+                        item
+                    ) =>
+                        total
+                        +
+                        Number(
+                            item.quantity || 1
+                        ),
+                    0
+                );
+
+
+            document.getElementById(
+                "cartCount"
+            ).textContent =
+                totalItems;
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "Unable to read cart count."
+        );
+
+    }
+
+
+});
+
+</script>
+
 
 </body>
+
 </html>
+```
