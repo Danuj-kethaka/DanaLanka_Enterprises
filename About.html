@@ -1,87 +1,1271 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="About.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Learn more about Dana Auto Parts, a trusted provider of quality heavy vehicle spare parts in Sri Lanka."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b0b0c"
+    >
+
+    <title>About Us | Dana Auto Parts</title>
+
+    <link
+        rel="stylesheet"
+        href="About.css"
+    >
+
 </head>
+
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#"><img src="images/Logo.png.webp" alt="Dana Auto Parts">Dana Auto Parts</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Account.html">Account</a></li>
-            <li><a href="Cart.php"><img src="images/cart.png.jpg" width="auto" height="30px" alt="Cart Icon"></a></li> <!-- Replaced Cart link with image -->
-        </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-    
-
-    <script>
-        // Toggle navbar on mobile
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-    </script>
 
 
+<!-- =====================================================
+     ANNOUNCEMENT BAR
+===================================================== -->
 
+<div class="announcement-bar">
 
+    <div class="announcement-inner">
 
-<div class="about-section"><br><br><br><br>
-    <h1>About Dana Auto Parts</h1>
-    <p>Your Trusted Provider of Heavy Vehicle Spare Parts</p>
+        <span>
+            Genuine & quality-tested automotive parts
+        </span>
+
+        <span class="announcement-divider"></span>
+
+        <strong>
+            Islandwide delivery available
+        </strong>
+
+    </div>
+
 </div>
-    
 
-<section class="content-section">
-    <div class="row">
-        <div class="col-2">
-            <h2>Our Story</h2>
-            <p>Dana Auto Parts was founded with a mission to provide high-quality spare parts for heavy vehicles. Over the years, we have built strong partnerships with leading brands and earned the trust of our clients.</p>
+
+
+<!-- =====================================================
+     HEADER / NAVIGATION
+===================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="index.html"
+            class="brand"
+            aria-label="Dana Auto Parts Home"
+        >
+
+            <span class="brand-logo">
+
+                <img
+                    src="images/Logo.png.webp"
+                    alt="Dana Auto Parts Logo"
+                >
+
+            </span>
+
+            <span class="brand-text">
+
+                <strong>DANA</strong>
+
+                <small>AUTO PARTS</small>
+
+            </span>
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <div
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a
+                href="index.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="products.html"
+                class="nav-link"
+            >
+                Products
+            </a>
+
+            <a
+                href="About.html"
+                class="nav-link active"
+            >
+                About
+            </a>
+
+            <a
+                href="Account.html"
+                class="nav-link"
+            >
+                Account
+            </a>
+
         </div>
-        <div class="col-2">
-            <img src="images/Logo.png.webp" alt="Our History" width="100%">
+
+
+
+        <!-- NAV ACTIONS -->
+
+        <div class="nav-actions">
+
+            <a
+                href="products.html"
+                class="nav-icon-button search-button"
+                aria-label="Search products"
+                title="Search products"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="6.5"
+                    ></circle>
+
+                    <path
+                        d="M16 16l5 5"
+                    ></path>
+
+                </svg>
+
+            </a>
+
+
+            <a
+                href="Account.html"
+                class="nav-icon-button"
+                aria-label="My account"
+                title="My Account"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <circle
+                        cx="12"
+                        cy="8"
+                        r="3.5"
+                    ></circle>
+
+                    <path
+                        d="M5 21c.7-4 3.1-6 7-6s6.3 2 7 6"
+                    ></path>
+
+                </svg>
+
+            </a>
+
+
+            <a
+                href="Cart.php"
+                class="cart-button"
+                aria-label="Shopping cart"
+                title="Shopping Cart"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"
+                    ></path>
+
+                    <circle
+                        cx="10"
+                        cy="20"
+                        r="1"
+                    ></circle>
+
+                    <circle
+                        cx="18"
+                        cy="20"
+                        r="1"
+                    ></circle>
+
+                </svg>
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
         </div>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     ABOUT HERO
+===================================================== -->
+
+<section class="about-hero">
+
+    <div class="about-hero-background"></div>
+
+    <div class="about-hero-overlay"></div>
+
+
+    <div class="about-hero-content container">
+
+        <div class="about-breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <span>
+                About Us
+            </span>
+
+        </div>
+
+
+        <span class="section-eyebrow light">
+            DANA AUTO PARTS
+        </span>
+
+
+        <h1>
+            Keeping Sri Lanka's
+            <span>vehicles moving.</span>
+        </h1>
+
+
+        <p>
+            Your trusted partner for quality heavy vehicle
+            spare parts, dependable service and solutions
+            built around the needs of your fleet.
+        </p>
+
     </div>
 
-    <div class="services-section">
-        <h2>Our Services</h2>
-        <p>We specialize in offering spare parts for various heavy vehicles, including buses, trucks, and lorries. Our products are sourced from trusted brands to ensure quality and durability.</p>
-    </div><br><br>
+</section>
 
-    <div class="why-choose-us"><br><br>
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>Trusted partnerships with leading manufacturers</li>
-            <li>High-quality spare parts for heavy vehicles</li>
-            <li>Exceptional customer service and support</li>
-            <li>Competitive pricing</li>
-        </ul>
+
+
+<!-- =====================================================
+     INTRODUCTION / OUR STORY
+===================================================== -->
+
+<section class="about-story-section">
+
+    <div class="container">
+
+        <div class="about-story-grid">
+
+
+            <div class="about-story-content">
+
+                <span class="section-eyebrow">
+                    OUR STORY
+                </span>
+
+                <h2>
+                    Built on quality.
+                    <span>Driven by trust.</span>
+                </h2>
+
+                <p>
+                    Dana Auto Parts was founded with a clear
+                    purpose — to provide reliable and quality
+                    spare parts for heavy vehicles while making
+                    the buying experience easier for customers.
+                </p>
+
+                <p>
+                    Over the years, we have built strong
+                    relationships with trusted suppliers and
+                    manufacturers, allowing us to provide
+                    dependable components for buses, trucks,
+                    lorries and other commercial vehicles.
+                </p>
+
+                <p>
+                    Our focus has always remained the same:
+                    quality products, fair pricing and
+                    customer support you can rely on.
+                </p>
+
+
+                <div class="about-story-highlights">
+
+                    <div class="story-highlight">
+
+                        <strong>
+                            Quality
+                        </strong>
+
+                        <span>
+                            Carefully selected parts
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-highlight">
+
+                        <strong>
+                            Reliability
+                        </strong>
+
+                        <span>
+                            Products you can trust
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-highlight">
+
+                        <strong>
+                            Support
+                        </strong>
+
+                        <span>
+                            Help when you need it
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="about-story-visual">
+
+                <div class="about-image-card">
+
+                    <img
+                        src="images/Logo.png.webp"
+                        alt="Dana Auto Parts"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+
+
+        </div>
+
     </div>
 
-    <div class="contact-info"><br><br><br>
-        <h2>Contact Us</h2>
-        <p>For more information, follow us on social media:</p>
-        <p>Facebook | Twitter | LinkedIn</p>
+</section>
+
+
+
+<!-- =====================================================
+     WHAT WE DO
+===================================================== -->
+
+<section class="about-services-section">
+
+    <div class="container">
+
+
+        <div class="section-heading centered">
+
+            <span class="section-eyebrow">
+                WHAT WE DO
+            </span>
+
+            <h2>
+                Parts that keep your
+                <span>business moving.</span>
+            </h2>
+
+            <p>
+                We provide a wide range of automotive components
+                designed to support the everyday demands of
+                heavy and commercial vehicles.
+            </p>
+
+        </div>
+
+
+
+        <div class="about-services-grid">
+
+
+            <article class="about-service-card">
+
+                <div class="about-service-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M4 6h16v12H4z"
+                        ></path>
+
+                        <path
+                            d="M8 6V4h8v2"
+                        ></path>
+
+                        <path
+                            d="M8 12h8"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Heavy Vehicle Parts
+                </h3>
+
+                <p>
+                    Spare parts for buses, trucks, lorries
+                    and other commercial vehicles.
+                </p>
+
+            </article>
+
+
+
+            <article class="about-service-card">
+
+                <div class="about-service-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"
+                        ></path>
+
+                        <path
+                            d="M8.5 12l2.2 2.2 4.8-5"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Quality Assurance
+                </h3>
+
+                <p>
+                    Carefully selected products sourced through
+                    trusted suppliers and manufacturers.
+                </p>
+
+            </article>
+
+
+
+            <article class="about-service-card">
+
+                <div class="about-service-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M3 6h11v10H3z"
+                        ></path>
+
+                        <path
+                            d="M14 9h4l3 3v4h-7z"
+                        ></path>
+
+                        <circle
+                            cx="7"
+                            cy="18"
+                            r="2"
+                        ></circle>
+
+                        <circle
+                            cx="18"
+                            cy="18"
+                            r="2"
+                        ></circle>
+
+                    </svg>
+
+                </div>
+
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Reliable Delivery
+                </h3>
+
+                <p>
+                    Helping customers receive the parts they
+                    need across Sri Lanka.
+                </p>
+
+            </article>
+
+
+
+            <article class="about-service-card">
+
+                <div class="about-service-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                        ></circle>
+
+                        <path
+                            d="M12 7v5l3 2"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Customer Support
+                </h3>
+
+                <p>
+                    Assistance in finding the right part for
+                    your vehicle and requirements.
+                </p>
+
+            </article>
+
+
+        </div>
+
     </div>
-</section><br><br>
+
+</section>
 
 
+
+<!-- =====================================================
+     WHY DANA
+===================================================== -->
+
+<section class="why-dana-section">
+
+    <div class="container">
+
+        <div class="why-dana-grid">
+
+
+            <div class="why-dana-content">
+
+                <span class="section-eyebrow light">
+                    WHY DANA
+                </span>
+
+                <h2>
+                    More than parts.
+                    <span>A partner you can trust.</span>
+                </h2>
+
+                <p>
+                    Choosing the right spare part is important
+                    for the performance, safety and reliability
+                    of your vehicle. That's why we focus on
+                    delivering products and service that give
+                    our customers confidence.
+                </p>
+
+
+                <a
+                    href="products.html"
+                    class="primary-button"
+                >
+
+                    Explore our parts
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M5 12h13"
+                        ></path>
+
+                        <path
+                            d="M13 6l6 6-6 6"
+                        ></path>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="why-dana-list">
+
+
+                <div class="why-dana-item">
+
+                    <div class="why-dana-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Trusted suppliers
+                        </h3>
+
+                        <p>
+                            We work with reliable suppliers and
+                            established brands to source quality
+                            components.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="why-dana-item">
+
+                    <div class="why-dana-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Fair market pricing
+                        </h3>
+
+                        <p>
+                            We aim to offer competitive prices
+                            without compromising on quality.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="why-dana-item">
+
+                    <div class="why-dana-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Customer first
+                        </h3>
+
+                        <p>
+                            Our customers are at the centre of
+                            everything we do.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="why-dana-item">
+
+                    <div class="why-dana-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Built for the road
+                        </h3>
+
+                        <p>
+                            We understand the importance of
+                            dependable parts for working vehicles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRUST FEATURES
+===================================================== -->
+
+<section class="about-trust-section">
+
+    <div class="container">
+
+        <div class="about-trust-grid">
+
+
+            <div class="about-trust-card">
+
+                <div class="about-trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M12 3l7 3v5c0 4.8-2.9 8.3-7 10-4.1-1.7-7-5.2-7-10V6l7-3z"
+                        ></path>
+
+                        <path
+                            d="M9 12l2 2 4-4"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <strong>
+                    Quality checked
+                </strong>
+
+                <span>
+                    Reliable parts for your vehicle
+                </span>
+
+            </div>
+
+
+
+            <div class="about-trust-card">
+
+                <div class="about-trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M3 6h11v11H3z"
+                        ></path>
+
+                        <path
+                            d="M14 9h4l3 3v5h-7z"
+                        ></path>
+
+                        <circle
+                            cx="7"
+                            cy="19"
+                            r="2"
+                        ></circle>
+
+                        <circle
+                            cx="18"
+                            cy="19"
+                            r="2"
+                        ></circle>
+
+                    </svg>
+
+                </div>
+
+                <strong>
+                    Islandwide delivery
+                </strong>
+
+                <span>
+                    We deliver across Sri Lanka
+                </span>
+
+            </div>
+
+
+
+            <div class="about-trust-card">
+
+                <div class="about-trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M12 3v18"
+                        ></path>
+
+                        <path
+                            d="M17 7.5c-.7-1.1-2-1.8-3.8-1.8-2.1 0-3.5 1-3.5 2.7 0 4.4 7.8 1.8 7.8 6.2 0 1.8-1.5 2.9-3.9 2.9-1.8 0-3.3-.6-4.2-1.9"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <strong>
+                    Competitive prices
+                </strong>
+
+                <span>
+                    Parts at fair market prices
+                </span>
+
+            </div>
+
+
+
+            <div class="about-trust-card">
+
+                <div class="about-trust-icon">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                        ></circle>
+
+                        <path
+                            d="M12 7v5l3 2"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <strong>
+                    Expert support
+                </strong>
+
+                <span>
+                    Need help choosing a part?
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="about-cta">
+
+    <div class="container">
+
+        <div class="about-cta-content">
+
+            <span class="section-eyebrow light">
+                NEED A PART?
+            </span>
+
+            <h2>
+                Let's keep your
+                <span>vehicle moving.</span>
+            </h2>
+
+            <p>
+                Browse our available spare parts or contact
+                Dana Auto Parts if you need help finding the
+                right component for your vehicle.
+            </p>
+
+
+            <div class="about-cta-actions">
+
+                <a
+                    href="products.html"
+                    class="primary-button"
+                >
+
+                    Browse products
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M5 12h13"
+                        ></path>
+
+                        <path
+                            d="M13 6l6 6-6 6"
+                        ></path>
+
+                    </svg>
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="secondary-button"
+                >
+                    Back to home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-logo">
+
+                        <img
+                            src="images/Logo.png.webp"
+                            alt="Dana Auto Parts Logo"
+                        >
+
+                    </span>
+
+                    <span class="brand-text">
+
+                        <strong>DANA</strong>
+
+                        <small>AUTO PARTS</small>
+
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Quality spare parts for buses, trucks,
+                    lorries and commercial vehicles across
+                    Sri Lanka.
+                </p>
+
+
+                <a
+                    href="products.html"
+                    class="footer-shop-link"
+                >
+                    Shop spare parts
+                </a>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="About.html">
+                    About Us
+                </a>
+
+                <a href="Account.html">
+                    My Account
+                </a>
+
+            </div>
+
+
+
+            <!-- SUPPORT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="products.html">
+                    Browse Parts
+                </a>
+
+                <a href="Account.html">
+                    Account
+                </a>
+
+                <a href="Cart.php">
+                    Shopping Cart
+                </a>
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Dana Auto Parts
+                </p>
+
+                <p>
+                    Sri Lanka
+                </p>
+
+                <a href="About.html">
+                    Get in touch
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Dana Auto Parts.
+                All rights reserved.
+            </p>
+
+            <p>
+                Quality parts. Reliable service.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     MOBILE NAVIGATION SCRIPT
+===================================================== -->
+
+<script>
+
+    const mobileMenuButton =
+        document.getElementById("mobileMenuButton");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    if (mobileMenuButton && navLinks) {
+
+        mobileMenuButton.addEventListener(
+            "click",
+            () => {
+
+                const isOpen =
+                    navLinks.classList.toggle("active");
+
+                mobileMenuButton.classList.toggle(
+                    "active",
+                    isOpen
+                );
+
+                mobileMenuButton.setAttribute(
+                    "aria-expanded",
+                    isOpen
+                );
+
+            }
+        );
+
+
+        navLinks.querySelectorAll("a").forEach(
+            link => {
+
+                link.addEventListener(
+                    "click",
+                    () => {
+
+                        navLinks.classList.remove(
+                            "active"
+                        );
+
+                        mobileMenuButton.classList.remove(
+                            "active"
+                        );
+
+                        mobileMenuButton.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+    }
+
+</script>
 
 
 </body>
+
 </html>
+
